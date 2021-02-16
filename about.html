@@ -18,17 +18,57 @@
     
 </head>
 <body>
+    
     <header>
-        <ul class="navBar sticky">
-            <li><a href="***"><h3 class="menuItems">Link</h3></a></li>
-            <li><a href="legal.html"><h3 class="menuItems">Legal Stuff</h3></a></li>
-            <li><a href="about.html"><h3 class="menuItems">About Us</h3></a></li>
-            <li><a href="index.html"><h3 class="menuItems">Home</h3></a></li>
-        </ul>
+        <div class="topnav" id="myTopnav">
+            <div class="containter">
+                <a href="index.html" class="activeLink">Overview</a>
+
+
+                <div class="dropdown">
+                    <button class="dropbtn">For Venues
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="thePlatform.html">The Platform</a>
+                        <a href="barApp.html">Bar App</a>
+                        <a href="managerApp.html">Manager App</a>
+                    </div>
+                </div>
+
+                <a href="customers.html">For Customers</a>
+
+                <div class="dropdown">
+                    <button class="dropbtn"> Who we are
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="about.html">Meet the team</a>
+                        <a href="contactUs.html">Contact Us</a>
+                    </div>
+                </div>
+
+
+                <div class="dropdown">
+                    <button class="dropbtn btnHelp">Help
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="customerAppGuide.html">Customer App Guide</a>
+                        <a href="barAppGuide.html">Bar App Guide</a>
+                        <a href="managerAppGuide.html">Manager App Guide</a>
+                        <a href="FAQs.html">FAQ's</a>
+                    </div>
+                </div>
+
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+            </div>
+        </div>
     </header>
 
     <img class="logoPic" src="images/butlerLogo.svg" alt="logo">
-        
+
+
     <div class="container">
         <h1 class="header"> Who are we? </h1>
         <div class="info"><p> Hi, together we set up The Wireless Waiter, get to know us</p></div>
@@ -69,7 +109,12 @@
                 </p>
             </div>
         </div>
-            
+    </div>
+        
+    
+    
+    
+    <div class="container">
     
         <br> 
         <br>
@@ -87,7 +132,26 @@
         <br>
     
     </div>
-    <div class="footer"></div>
+    <div class="footer">
+        <div class="row footerContent">
+            <div class="four columns">
+                <h3 class="footerTitle">TheWirelessWaiter</h3>
+            </div>
+            <div class="four columns">
+                <h3 class="footerTitle">Footer Content</h3>
+            </div>
+            <div class="four columns">
+                <h4 class="footerTitle">Legalities</h4>
+                <ul>
+                    <li><a href="privacyPolicy.html">Privacy Policy</a></li>
+                    <li><a href="venueTs&Cs.html">Venue T's & C's</a></li>
+                    <li><a href="customerTs&Cs.html">Customer T's & C's</a></li>
+                </ul>
+            </div>
+        </div>
+    
+    </div>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <script src="/js/script.js"></script>
 </body>
 </html>

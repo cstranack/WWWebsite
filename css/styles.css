@@ -26,9 +26,13 @@ padding-top: 30px;
   padding-left: 16px;
   padding-top: 14px;
   text-decoration: none;
-  font-size: 17px;
+  font-size: 15px;
   font-family: 'Poppins', sans-serif;
 }
+
+/* .btnHelp{
+  padding-bottom: 10px;
+} */
 
 .activeLink {
   color: white !important;
@@ -40,6 +44,8 @@ padding-top: 30px;
 /* Hide the link that should open and close the topnav on small screens */
 .topnav .icon {
   display: none;
+  padding-right: 15px;
+  padding-bottom: 10px;
 }
 
 /* Dropdown container - needed to position the dropdown content */
@@ -51,7 +57,7 @@ padding-top: 30px;
 
 /* Style the dropdown button to fit inside the topnav */
 .dropdown .dropbtn {
-  font-size: 17px;
+  font-size: 15px;
   font-weight: 25;
   text-transform: capitalize;
   border: none;
@@ -103,11 +109,11 @@ padding-top: 30px;
   display: block;
 }
 
- /* Add an active class to highlight the current page */
+
 
   
-  /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
-  @media screen and (max-width: 600px) {
+  /* When the screen is less than 800 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+  @media screen and (max-width: 800px) {
     .topnav a:not(:first-child), .dropdown .dropbtn {
       display: none;
     }
@@ -118,7 +124,7 @@ padding-top: 30px;
   }
   
   /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 800px) {
     .topnav.responsive {position: relative;}
     .topnav.responsive a.icon {
       position: absolute;
@@ -171,12 +177,15 @@ hr{
 .heading{
     padding-top: 30px;
     text-align: left;
+    font-size: 20px;
+    padding-left: 6px;
 }
 
 .headingBar{
     padding-top: 30px;
-    padding-left: 60px;
+    padding-left: 6px;
     text-align: left;
+    font-size: 20px;
 }
 
 
@@ -525,6 +534,37 @@ p{
 
 
 
+.footer{
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #737373;
+  color: white;
+
+}
+
+.footerContent{
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  font-size: 15;
+  padding-top: 50px;
+  padding-bottom: 20px;
+
+}
+
+.footerTitle{
+  font-size: 20px;
+}
+
+ul{
+  list-style: none;
+}
+
+li a{
+  color: rgb(185, 185, 185);
+}
+
+
 /* Larger than mobile */
 @media (min-width: 400px) {
 
@@ -541,7 +581,7 @@ p{
   
     .barText{
       font-size: 15px;
-      padding-left: 60px;
+      padding-left: 0px;
       text-align: left;
 
     }
@@ -556,6 +596,13 @@ p{
         text-align: center;
         font-size: 30px; 
     }
+
+    .textContainer{
+      padding-left: 10%;
+      padding-right: 10%;
+      padding-top: 10%;
+      padding-bottom: 10%;
+  }
 }
 
 
@@ -596,7 +643,7 @@ p{
     .info{
         font-family: 'Poppins', sans-serif;
         font-weight: 400;
-        font-size: 20px;
+        font-size: 15px;
     }
     
     .slogan{
@@ -627,39 +674,51 @@ p{
         font-size: 35px;
     }
 
+/* Making the content headers responsive */
+
+    .heading{
+      padding-top: 30px;
+      text-align: left;
+      padding-left: 0px;
+      font-size: 35px;
+  }
+  
+    .headingBar{
+      padding-top: 30px;
+      padding-left: 60px;
+      text-align: left;
+      font-size: 35px;
+  }
+
 
     .customerText{
-      font-size: 20px;
+      font-size: 15px;
 
     }
   
     .barText{
-      font-size: 20px;
+      font-size: 15px;
       padding-left: 60px;
 
     }
 
     /* padding around the home page app text in a larger screen size */
     .contentContainer{
-      padding-right: 30%;
-      padding-top: 10%;
-      padding-bottom: 20%;
+      padding-right: 10%;
+      padding-top: 5%;
+      padding-bottom: 10%;
   
     }
 
     .textContainer{
       padding-left: 10%;
-      padding-right: 30%;
+      padding-right: 10%;
       padding-top: 10%;
-      padding-bottom: 20%;
-  
+      padding-bottom: 10%;
   }
 
 
-.topnav a{
-  /* media query for non burger menu */
-  padding: 14px 16px;
-}
+
 
 
 }
@@ -668,6 +727,19 @@ p{
 
 /* Larger than desktop */
 @media (min-width: 1000px) {
+
+  /* NAV BAR TEXT  */
+
+  .topnav a{
+    /* media query for non burger menu */
+      font-size: 17px;
+      padding: 14px 16px;
+  }
+
+  .dropdown .dropbtn {
+    font-size: 17px;
+    font-weight: 25;
+  }
 
     .customerAppHeader{
         z-index: 0.1;
@@ -678,10 +750,34 @@ p{
         margin-left: auto;
         margin-right: auto;
     }
+
+    .info{
+      font-family: 'Poppins', sans-serif;
+      font-weight: 400;
+      font-size: 20px;
+  }
+
+    .customerText{
+      font-size: 20px;
+
+    }
+  
+    .barText{
+      font-size: 20px;
+      padding-left:0px;
+
+    }
+
+    .textContainer{
+      padding-left: 10%;
+      padding-right: 10%;
+      padding-top: 10%;
+      padding-bottom: 10%;
+  }
 }
 
 /* Larger than Desktop HD */
-@media (min-width: 1200px) {
+@media (min-width: 1400px) {
 
     .customerAppHeader{
         z-index: 0.1;
@@ -702,4 +798,20 @@ p{
       padding-left: 60px;
 
     }
+
+    .contentContainer{
+      padding-right: 30%;
+      padding-top: 10%;
+      padding-bottom: 20%;
+  
+    }
+
+    .textContainer{
+      padding-left: 10%;
+      padding-right: 30%;
+      padding-top: 10%;
+      padding-bottom: 20%;
+  
+  }
+
 }

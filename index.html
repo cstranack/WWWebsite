@@ -20,74 +20,56 @@
 <body>
     
     <header>
-        <div class="topnav sticky" id="myTopnav">
-            
-            <a href="index.html" class="activeLink">Overview</a>
+        <div class="topnav" id="myTopnav">
+            <div class="containter">
+                <a href="index.html" class="activeLink">Overview</a>
 
 
-            <div class="dropdown">
-                <button class="dropbtn">For Venues
-                    <i class="fa fa-caret-down"></i>
-                </button>
-                <div class="dropdown-content">
-                    <a href="#">The Platform</a>
-                    <a href="#">Bar App</a>
-                    <a href="#">Manager App</a>
+                <div class="dropdown">
+                    <button class="dropbtn">For Venues
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="thePlatform.html">The Platform</a>
+                        <a href="barApp.html">Bar App</a>
+                        <a href="managerApp.html">Manager App</a>
+                    </div>
                 </div>
-            </div>
 
-            <a href="customers.html">For Customers</a>
+                <a href="customers.html">For Customers</a>
 
-            <div class="dropdown">
-                <button class="dropbtn"> Who we are
-                    <i class="fa fa-caret-down"></i>
-                </button>
-                <div class="dropdown-content">
-                    <a href="#">Meet the team</a>
-                    <a href="#">Contact Us</a>
+                <div class="dropdown">
+                    <button class="dropbtn"> Who we are
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="about.html">Meet the team</a>
+                        <a href="contactUs.html">Contact Us</a>
+                    </div>
                 </div>
-            </div>
 
 
-            <div class="dropdown">
-                <button class="dropbtn">Legalities
-                    <i class="fa fa-caret-down"></i>
-                </button>
-                <div class="dropdown-content">
-                    <a href="#">Privacy Policy</a>
-                    <a href="#">Venue T's & C's</a>
-                    <a href="#">Customer T's & C's</a>
+                <div class="dropdown">
+                    <button class="dropbtn btnHelp">Help
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="customerAppGuide.html">Customer App Guide</a>
+                        <a href="barAppGuide.html">Bar App Guide</a>
+                        <a href="managerAppGuide.html">Manager App Guide</a>
+                        <a href="FAQs.html">FAQ's</a>
+                    </div>
                 </div>
+
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
             </div>
-
-            <div class="dropdown">
-                <button class="dropbtn">Help
-                    <i class="fa fa-caret-down"></i>
-                </button>
-                <div class="dropdown-content">
-                    <a href="#">Customer App Guide</a>
-                    <a href="#">Bar App Guide</a>
-                    <a href="#">Manager App Guide</a>
-                    <a href="#">FAQ's</a>
-                </div>
-            </div>
-
-           
-
-           
-
-            
-            
-               
-        
-            <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
         </div>
     </header>
 
     <img class="logoPic" src="images/butlerLogo.svg" alt="logo">
 
 
-    <div = class="container">
+    <div class="container">
         <div class="row">
             <div class="titleContainer">
                 <div class="six columns"> 
@@ -157,7 +139,7 @@
                     <br>
                     <br>
                     <h3 class="heading">Customer App</h3>
-                    <br>
+                    
                     <div class="contentContainer">
                     <div class="customerText"><p> Our customer app incorporates sophisticated design 
                         and seamless functionality for the ease and satisfaction of the customer. 
@@ -181,7 +163,7 @@
                     <br>
                     <br>
                     <h3 class="headingBar">Bar App</h3>
-                    <br>
+                    
                     <div class="contentContainer">
                     <div class="barText"><p> The bar app is created with efficiency and practicality at the 
                         forefront. With an easy to use interface that is perfectly in sync with the 
@@ -267,7 +249,7 @@
                     <br>
                     <br>
                     <h3 class="heading">Manager App</h3>
-                    <br>
+                    
                     <div class="contentContainer">
                     <div class="customerText"><p> The manager app is a critical part of the 
                         wireless waiter system, it provides a detailed overview of 
@@ -301,7 +283,25 @@
         <br>
     
     </div>
-    <div class="footer"></div>
+    <div class="footer">
+        <div class="row footerContent">
+            <div class="four columns">
+                <h3 class="footerTitle">TheWirelessWaiter</h3>
+            </div>
+            <div class="four columns">
+                <h3 class="footerTitle">Footer Content</h3>
+            </div>
+            <div class="four columns">
+                <h4 class="footerTitle">Legalities</h4>
+                <ul>
+                    <li><a href="privacyPolicy.html">Privacy Policy</a></li>
+                    <li><a href="venueTs&Cs.html">Venue T's & C's</a></li>
+                    <li><a href="customerTs&Cs.html">Customer T's & C's</a></li>
+                </ul>
+            </div>
+        </div>
+    
+    </div>
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <script src="/js/script.js"></script>
 </body>
