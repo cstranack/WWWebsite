@@ -9,7 +9,7 @@ max-width: 1500px;
 padding-top: 30px;
 
 }
-/* NAV BAR */
+/* ---------------  NAV BAR --------------- */
 
 /* Add a black background color to the top navigation */
 .topnav {
@@ -30,13 +30,17 @@ padding-top: 30px;
   font-family: 'Poppins', sans-serif;
 }
 
-/* .btnHelp{
-  padding-bottom: 10px;
-} */
+
 
 .activeLink {
   color: white !important;
   text-decoration: underline !important;
+}
+
+.activeDropDown{
+  color: #d3d3d3 !important;
+  text-decoration: underline !important;
+
 }
 
 
@@ -165,12 +169,41 @@ h3{
     font-weight: 400;
 }
 
+h4{
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+}
+
 hr{
     height:2px;
     border-width:0;
     color:gray;
     background-color:gray;
 }
+
+ul{ 
+  list-style: none;
+}
+
+li{
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+}
+
+li a{
+  color: rgb(180, 179, 179);
+}
+li a:hover{
+  color: rgb(49, 49, 49);
+}
+
+ul.contentList{
+  list-style: circle;
+  padding-left: 15px;
+}
+
+
+
 
 /* HEADING */
 
@@ -461,21 +494,78 @@ hr{
 /* ----------------------------- */
 
 
+/* --------------PAGE SETUP ------------- */
+
+.pageContainer{
+  max-width: 900px;
+  margin: 20px 20px;
+  margin-top: 5%;
+}
+
+.content{
+  padding-top: 20px;
+}
+
+.textContainer{
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+}
+
+.contentContainer{
+  padding-right: 5px;
+  padding-left: 5px;
+  padding-top: 0;
+  padding-bottom: 0;
+
+}
+
+
+.contactContainer{
+  margin-top: 25%;
+  margin-bottom:auto;
+}
+
+
+
+/* -------------------------------------- */
+
+/* -----------ABOUT US PAGE -------- */
 
 .claire, .tim, .jenny{
     margin-top: 50px;
     border-radius: 50%;
-    width: 200px;
-
+    width: 150px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 
 .bioText{
-    margin-top: 50px;
-    padding-top: 50px;
-    font-size: 30px;
-    font-size: 15px;
+    font-size: 13px;
+    text-align: center;
 }
+
+.name{
+  margin-top: 45px;
+  margin-bottom: 0px;
+  text-align: center;
+}
+
+.jobTitle{
+  margin-bottom: 0px;
+  text-align: center;
+}
+
+.degree{
+  font-size: 10px;
+  text-align: center;
+}
+
+
 
 p{
     font-family: 'Poppins', sans-serif;
@@ -483,20 +573,12 @@ p{
 }
 
 
-.textContainer{
-    padding-left: 5px;
-    padding-right: 5px;
-    padding-top: 20px;
-    padding-bottom: 20px;
 
-}
+/* ------------------------------ */
 
-.contentContainer{
-    padding-right: 5px;
-    padding-left: 5px;
-    padding-top: 0;
-    padding-bottom: 0;
-
+.contactText{
+  font-size: 20px;
+  text-align: center;
 }
 
 .formTitle{
@@ -556,14 +638,6 @@ p{
   font-size: 20px;
 }
 
-ul{
-  list-style: none;
-}
-
-li a{
-  color: rgb(185, 185, 185);
-}
-
 
 /* Larger than mobile */
 @media (min-width: 400px) {
@@ -603,6 +677,39 @@ li a{
       padding-top: 10%;
       padding-bottom: 10%;
   }
+
+  .bioText{
+    text-align: left;
+    font-size: 15px;
+  }
+
+  .name{
+    text-align: left;
+    padding-top: 20px;
+    margin-bottom: 0px;
+  }
+
+  .jobTitle{
+    text-align: left;
+    margin-bottom: 0px;
+  }
+
+  .degree{
+    text-align: left;
+    font-size: 10px;
+  }
+
+  .claire, .tim, .jenny{
+    margin-top: 50px;
+    border-radius: 50%;
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+ 
+
+
 }
 
 
@@ -717,7 +824,10 @@ li a{
       padding-bottom: 10%;
   }
 
+  
 
+
+  
 
 
 
@@ -727,6 +837,12 @@ li a{
 
 /* Larger than desktop */
 @media (min-width: 1000px) {
+
+  .pageContainer{
+    max-width: 900px;
+    margin: 0 auto;
+    margin-top: 5%;
+  }
 
   /* NAV BAR TEXT  */
 
