@@ -500,6 +500,7 @@ ul.contentList{
   max-width: 900px;
   margin: 20px 20px;
   margin-top: 5%;
+  padding-bottom: 10%;
 }
 
 .content{
@@ -528,6 +529,19 @@ ul.contentList{
   margin-bottom:auto;
 }
 
+
+.CustomerTsCs{
+ width: 250px;
+ height: 800px;
+ margin-top: 50px;
+ margin-left: 5%;
+ margin-right: auto;
+}
+
+.legalitiesTitle{
+  padding-top: 30px;
+  text-align: center;
+}
 
 
 /* -------------------------------------- */
@@ -659,6 +673,19 @@ p{
       text-align: left;
 
     }
+
+    .CustomerTsCs{
+      width: 350px;
+      height: 800px;
+      margin-top: 50px;
+      margin-left: 5%;
+      margin-right: auto;
+     }
+     
+     .legalitiesTitle{
+       padding-top: 30px;
+       text-align: center;
+     }
 }
 
 
@@ -707,6 +734,18 @@ p{
     margin-right: auto;
 }
 
+.CustomerTsCs{
+  width: 850px;
+  height: 800px;
+  margin-top: 50px;
+  margin-left: 22%;
+  margin-right: auto;
+ }
+ 
+ .legalitiesTitle{
+   padding-top: 30px;
+   text-align: center;
+ }
  
 
 
@@ -824,6 +863,19 @@ p{
       padding-bottom: 10%;
   }
 
+  .CustomerTsCs{
+    width: 500px;
+    height: 800px;
+    margin-top: 50px;
+    margin-left: 10%;
+    margin-right: auto;
+   }
+   
+   .legalitiesTitle{
+     padding-top: 30px;
+     text-align: center;
+   }
+
   
 
 
@@ -890,6 +942,20 @@ p{
       padding-top: 10%;
       padding-bottom: 10%;
   }
+
+  .CustomerTsCs{
+    width: 675px;
+    height: 800px;
+    margin-top: 50px;
+    margin-left: 10%;
+    margin-right: auto;
+   }
+   
+   .legalitiesTitle{
+     padding-top: 30px;
+     text-align: center;
+   }
+
 }
 
 /* Larger than Desktop HD */
@@ -929,5 +995,40 @@ p{
       padding-bottom: 20%;
   
   }
+
+  .CustomerTsCs{
+    width: 800px;
+    height: 800px;
+    margin-top: 50px;
+    margin-left: 15%;
+    margin-right: auto;
+   }
+   
+   .legalitiesTitle{
+     padding-top: 30px;
+     text-align: center;
+   }
+
+}
+
+
+/* Larger than big desktop */
+@media (min-width: 2000px) {
+
+  .CustomerTsCs{
+    width: 800px;
+    height: 800px;
+    margin-top: 50px;
+    margin-left: 22%;
+    margin-right: auto;
+   }
+   
+   .legalitiesTitle{
+     padding-top: 30px;
+     text-align: center;
+   }
+
+
+
 
 }
