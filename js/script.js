@@ -106,3 +106,5 @@ function showSlidesManager(n) {
   slidesManager[slideIndexManager-1].style.display = "block";  
   dotsManager[slideIndexManager-1].className += " active";
 }
+
+
