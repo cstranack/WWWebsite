@@ -7,7 +7,7 @@
     <!-- frameworks -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha256-l85OmPOjvil/SOvVt3HnSSjzF1TUMyT9eV0c2BzEGzU=" crossorigin="anonymous" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css" integrity="sha256-2YQRJMXD7pIAPHiXr0s+vlRWA7GYJEK0ARns7k2sbHY=" crossorigin="anonymous" />
-    
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <!-- fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
      
@@ -71,49 +71,66 @@
 
     <div class="pageContainer">
 
-        <h1> Bar App </h1>
+            <h1> Bar App </h1>
 
 
-        <p class="barPageContent">
-            The Bar app is a tablet app to allow Bar Staff to view and fulfil orders:
-        </p>
-    </div>
+            <p class="barPageContent">
+                The Bar app is a tablet app to allow Bar Staff to view and fulfil orders:
+            </p>
 
-    <div class ="row">
-        <div class=" six columns">
-            <img class="barApp centerBar" src="images/DashboardAll.png" alt="barApp">
-        </div>
-        <div class=" six columns">
-            <p class="appPageTextRight">A theatre has the option to route orders to different bars for fulfilment, 
-                any number of bars or outlets can be added to ease congestion </p> 
-        </div>
-    </div>
+            <br>
+            <br>
+            <br>
+    
 
-    <div class ="row">
-        <div class=" six columns">
-            <p class="appPageTextLeft">Bar staff have the ability to open or shut their bar or open for pre-orders only</p> 
+        <div class ="row">
+            <div class=" nine columns" data-aos="fade-up">
+                <img class="barApp centerBar" src="images/BarImage1.png" alt="barApp">
+            </div>
+            <div class=" three columns">
+                <br>
+                <br>
+                <br>
+                <p class="customerText">A theatre has the option to route orders to different bars for fulfilment, 
+                    any number of bars or outlets can be added to ease congestion </p> 
+            </div>
         </div>
-        <div class=" six columns">
-            <img class="barApp centerBar" src="images/DashboardAll.png" alt="barApp">
-        </div>
-    </div>
 
-    <div class ="row">
-        <div class=" six columns">
-            <img class="barApp centerBar" src="images/DashboardAll.png" alt="barApp">
+        <div class ="row">
+            <div class=" four columns">
+                <br>
+                <br>
+                <br>
+                <p class="barText">Bar staff have the ability to open or shut their bar or open for pre-orders only</p> 
+            </div>
+            <div class=" eight columns" data-aos="fade-up">
+                <img class="barApp centerBar" src="images/BarImage2.png" alt="barApp">
+            </div>
         </div>
-        <div class=" six columns">
-            <p class="appPageTextRight">Bar staff have the ability to switch off unavailable stock in real-time 
-                and amend customer orders </p> 
-        </div>
-    </div>
 
-    <div class ="row">
-        <div class=" six columns">
-            <p class="appPageTextLeft">All historic orders can be viewed on the app for information </p> 
+        <div class ="row">
+            <div class=" nine columns" data-aos="fade-up">
+                <img class="barApp centerBar" src="images/BarImage3.png" alt="barApp">
+            </div>
+            <div class=" three columns">
+                <br>
+                <br>
+                <br>
+                <p class="customerText">Bar staff have the ability to switch off unavailable stock in real-time 
+                    and amend customer orders </p> 
+            </div>
         </div>
-        <div class=" six columns">
-            <img class="barApp centerBar" src="images/DashboardAll.png" alt="barApp">
+
+        <div class ="row">
+            <div class=" two columns">
+                <br>
+                <br>
+                <br>
+                <p class="barText">All historic orders can be viewed on the app for information </p> 
+            </div>
+            <div class=" ten columns" data-aos="fade-up">
+                <img class="barApp centerBar" src="images/BarImage4.png" alt="barApp">
+            </div>
         </div>
     </div>
 
@@ -154,7 +171,7 @@
         <br>
     
     </div>
-    <div class="footer">
+    <div class="footer" data-aos="fade-up">
         <div class="row footerContent">
             <div class="four columns">
                 <h3 class="footerTitle">TheWirelessWaiter</h3>
@@ -174,6 +191,10 @@
     
     </div>
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
     <script src="/js/script.js"></script>
 </body>
 </html>

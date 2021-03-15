@@ -225,8 +225,8 @@ ul.contentList{
 .title{
     margin-top: 10px;
     padding-top: 20%;
-    padding-left: 5%;
-    font-size: 30px;
+    text-align:center;
+    font-size: 20px;
 }
 
 
@@ -346,7 +346,9 @@ ul.contentList{
     }
 
 
-
+.fomButton:Hover{
+ background-color: white;
+}
 
 #selectVenue, #menu, #orderSummary{
     margin-top: 20px;
@@ -680,7 +682,8 @@ p{
 
 
 .appPageTextRight{
-  padding-top: 250px;
+  padding-top: 30%;
+  padding-left: 100px;
   padding-right: 100px;
   font-size: 15px;
 
@@ -711,6 +714,11 @@ p{
 
     }
 
+    .headingBar{
+      padding-left: 0px;
+      text-align: left;
+    }
+
     .CustomerTsCs{
       width: 350px;
       height: 800px;
@@ -723,6 +731,8 @@ p{
        padding-top: 30px;
        text-align: center;
      }
+
+    
 }
 
 
@@ -809,7 +819,7 @@ p{
     
     .title{
         padding-top: 10%;
-        padding-left: 10%;
+        text-align:center;
         font-size: 50px;
     }
 
@@ -884,6 +894,12 @@ p{
       text-align: left;
       font-size: 35px;
   }
+   
+  .barText{
+    font-size: 15px;
+    padding-left: 60px;
+
+  }
 
 
     .customerText{
@@ -891,11 +907,7 @@ p{
 
     }
   
-    .barText{
-      font-size: 15px;
-      padding-left: 60px;
-
-    }
+  
 
     /* padding around the home page app text in a larger screen size */
     .contentContainer{
@@ -980,11 +992,6 @@ p{
 
     }
   
-    .barText{
-      font-size: 15px;
-      padding-left:0px;
-
-    }
 
     .textContainer{
       padding-left: 10%;
@@ -1014,6 +1021,13 @@ p{
     font-size: 35px;
 }
 
+
+.barText{
+  font-size: 15px;
+  padding-left:0px;
+
+}
+
 }
 
 /* Larger than Desktop HD */
@@ -1038,6 +1052,15 @@ p{
       padding-left: 60px;
 
     }
+
+    .headingBar{
+      padding-top: 30px;
+      padding-left: 60px;
+      text-align: left;
+      font-size: 35px;
+  }
+
+
 
     .contentContainer{
       padding-right: 30%;

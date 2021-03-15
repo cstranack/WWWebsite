@@ -7,7 +7,7 @@
     <!-- frameworks -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha256-l85OmPOjvil/SOvVt3HnSSjzF1TUMyT9eV0c2BzEGzU=" crossorigin="anonymous" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css" integrity="sha256-2YQRJMXD7pIAPHiXr0s+vlRWA7GYJEK0ARns7k2sbHY=" crossorigin="anonymous" />
-    
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <!-- fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
      
@@ -79,37 +79,47 @@
             food or merchandise from their theatre seats or at a bar or café within the venue:
 
         </p>
-    </div>
+    
 
 
-    <div class ="row">
-        <div class=" six columns">
-            <img class="customerApp centerCustomer"  src="images/SelectVenue.png" alt="CustomerApp">
+        <div class ="row">
+            <div class=" nine columns" data-aos="fade-up">
+                <img class="barApp centerBar"  src="images/Customer1.png" alt="CustomerApp">
+            </div>
+            <div class=" three columns">
+                <br>
+                <br>
+                <br>
+                <p class="customerText">A theatre has the ability to choose ‘seat service’ or ‘collection service’ – 
+                    collection allows targeted seats to be directed to the nearest pick-up point, 
+                    showing one-way routes and pick-up times to reduce congestion </p> 
+            </div>
         </div>
-        <div class=" six columns">
-            <p class="appPageTextRight">A theatre has the ability to choose ‘seat service’ or ‘collection service’ – 
-                collection allows targeted seats to be directed to the nearest pick-up point, 
-                showing one-way routes and pick-up times to reduce congestion </p> 
-        </div>
-    </div>
 
-    <div class ="row">
-        <div class=" six columns">
-            <p class="appPageTextLeft">Pre-ordering option so drinks & merchandise can be available as theatre 
-                goers arrive, again reducing the need for movement around the theatre</p> 
+        <div class ="row">
+            <div class=" three columns">
+                <br>
+                <br>
+                <br>
+                <p class="BarText">Pre-ordering option so drinks & merchandise can be available as theatre 
+                    goers arrive, again reducing the need for movement around the theatre</p> 
+            </div>
+            <div class=" nine columns" data-aos="fade-up">
+                <img class="barApp centerBar" src="images/customer2.png" alt="CustomerApp">
+            </div>
         </div>
-        <div class=" six columns">
-            <img class="customerApp centerCustomer" src="images/SelectVenue.png" alt="CustomerApp">
-        </div>
-    </div>
 
-    <div class ="row">
-        <div class=" six columns">
-            <img class="customerApp centerCustomer" src="images/SelectVenue.png" alt="CustomerApp">
-        </div>
-        <div class=" six columns">
-            <p class="appPageTextRight">Initially targeted at drinks, food & merchandise purchasing, long-term 
-                looking at other innovative ways to increase theatre revenue through technology </p> 
+        <div class ="row">
+            <div class=" nine columns" data-aos="fade-up">
+                <img class="barApp centerBar" src="images/customer3.png" alt="CustomerApp">
+            </div>
+            <div class=" three columns">
+                <br>
+                <br>
+                <br>
+                <p class="customerText">Initially targeted at drinks, food & merchandise purchasing, long-term 
+                    looking at other innovative ways to increase theatre revenue through technology </p> 
+            </div>
         </div>
     </div>
 
@@ -149,7 +159,7 @@
         <br>
     
     </div>
-    <div class="footer">
+    <div class="footer" data-aos="fade-up">
         <div class="row footerContent">
             <div class="four columns">
                 <h3 class="footerTitle">TheWirelessWaiter</h3>
@@ -169,6 +179,10 @@
     
     </div>
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
     <script src="/js/script.js"></script>
 </body>
 </html>
