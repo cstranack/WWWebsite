@@ -5,7 +5,7 @@ html{
 }
 
 .container{
-max-width: 1500px;
+max-width: 1100px;
 padding-top: 30px;
 
 }
@@ -216,7 +216,6 @@ ul.contentList{
 
 .headingBar{
     padding-top: 30px;
-    padding-left: 6px;
     text-align: left;
     font-size: 20px;
 }
@@ -345,6 +344,10 @@ ul.contentList{
     
     }
 
+.fomButton{
+  font-family: 'Poppins', sans-serif;
+}
+
 
 .fomButton:Hover{
  background-color: white;
@@ -357,14 +360,17 @@ ul.contentList{
 
 
 .customerText{
-    font-size: 10px;
+    font-size: 15px;
     
 
 }
 
 .barText{
-    font-size: 10px;
-    
+    font-size: 15px; 
+}
+
+#barFOMButton{
+  font-family: 'Poppins', sans-serif;
 }
 
 .barApp{
@@ -509,13 +515,15 @@ ul.contentList{
 /* --------------PAGE SETUP ------------- */
 
 .pageContainer{
-  max-width: 900px;
+  width: 900px;
   margin: 20px 20px;
   margin-top: 5%;
   padding-bottom: 10%;
 }
 
 .content{
+  padding-left: 20px;
+  padding-right: 20px;
   padding-top: 20px;
 }
 
@@ -711,8 +719,9 @@ p{
       font-size: 15px;
       padding-left: 0px;
       text-align: left;
-
     }
+
+  
 
     .headingBar{
       padding-left: 0px;
@@ -797,7 +806,6 @@ p{
 
  .headingBar{
   padding-top: 30px;
-  padding-left: 60px;
   text-align: left;
   font-size: 35px;
 }
@@ -890,7 +898,6 @@ p{
   
     .headingBar{
       padding-top: 30px;
-      padding-left: 60px;
       text-align: left;
       font-size: 35px;
   }
@@ -953,7 +960,7 @@ p{
 @media (min-width: 1000px) {
 
   .pageContainer{
-    max-width: 900px;
+    width: 1000px;
     margin: 0 auto;
     margin-top: 5%;
   }
@@ -987,10 +994,7 @@ p{
       font-size: 20px;
   }
 
-    .customerText{
-      font-size: 15px;
-
-    }
+   
   
 
     .textContainer{
@@ -1016,7 +1020,6 @@ p{
 
    .headingBar{
     padding-top: 30px;
-    padding-left: 0px;
     text-align: left;
     font-size: 35px;
 }
@@ -1025,6 +1028,11 @@ p{
 .barText{
   font-size: 15px;
   padding-left:0px;
+
+}
+
+.customerText{
+  font-size: 15px;
 
 }
 
@@ -1055,7 +1063,6 @@ p{
 
     .headingBar{
       padding-top: 30px;
-      padding-left: 60px;
       text-align: left;
       font-size: 35px;
   }
@@ -1090,6 +1097,12 @@ p{
      padding-top: 30px;
      text-align: center;
    }
+
+   .pageContainer{
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top: 5%;
+  }
 
 }
 
