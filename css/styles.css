@@ -697,7 +697,18 @@ p{
 
 }
 
+/* -----Benefits PAGE------ */
 
+.Icons{
+width: 50px;
+padding-top: 10px;
+}
+
+#iconContainer{
+  width: 500px;
+  margin: auto;
+  padding-bottom: 20px;
+}
 
 
 
@@ -735,6 +746,8 @@ p{
       margin-left: 5%;
       margin-right: auto;
      }
+
+     
      
      .legalitiesTitle{
        padding-top: 30px;
