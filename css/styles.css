@@ -1,0 +1,1143 @@
+html{
+    background: #f8f8ff;
+    overflow-x: hidden;
+    z-index: -1;
+}
+
+.container{
+max-width: 1100px;
+padding-top: 30px;
+
+}
+/* ---------------  NAV BAR --------------- */
+
+/* Add a black background color to the top navigation */
+.topnav {
+  background-color: rgb(168,155,255,0.5);;
+  padding-left: 3%;
+  overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  display: block;
+  color: #737373;
+  padding-left: 16px;
+  padding-top: 14px;
+  text-decoration: none;
+  font-size: 15px;
+  font-family: 'Poppins', sans-serif;
+}
+
+
+
+.activeLink {
+  color: white !important;
+  text-decoration: underline !important;
+}
+
+.activeDropDown{
+  color: #d3d3d3 !important;
+  text-decoration: underline !important;
+
+}
+
+
+
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+  display: none;
+  padding-right: 15px;
+  padding-bottom: 10px;
+}
+
+/* Dropdown container - needed to position the dropdown content */
+.dropdown {
+  overflow: hidden;
+  float: left;
+}
+
+
+/* Style the dropdown button to fit inside the topnav */
+.dropdown .dropbtn {
+  font-size: 15px;
+  font-weight: 25;
+  text-transform: capitalize;
+  border: none;
+  outline: none;
+  color: #737373;
+  text-decoration: none;
+  padding: 9px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+/* Style the dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Style the links inside the dropdown */
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+
+
+/* Add a dark background on topnav links and the dropdown button on hover */
+.topnav a:hover, .dropdown:hover .dropbtn {
+  color: white;
+  text-decoration: underline;
+}
+
+/* Add a grey background to dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Show the dropdown menu when the user moves the mouse over the dropdown button */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
+
+  
+  /* When the screen is less than 800 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+  @media screen and (max-width: 800px) {
+    .topnav a:not(:first-child), .dropdown .dropbtn {
+      display: none;
+    }
+    .topnav a.icon {
+      float: right;
+      display: block;
+    }
+  }
+  
+  /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+  @media screen and (max-width: 800px) {
+    .topnav.responsive {position: relative;}
+    .topnav.responsive a.icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .topnav.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+    .topnav.responsive .dropdown {float: none;}
+    .topnav.responsive .dropdown-content {position: relative;}
+    .topnav.responsive .dropdown .dropbtn {
+      display: block;
+      width: 100%;
+      text-align: left;
+    }
+  }
+
+
+/* TEXT STYLES */
+
+h1{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+}
+
+
+h2{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+}
+
+
+h3{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+}
+
+h4{
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+}
+
+hr{
+    height:2px;
+    border-width:0;
+    color:gray;
+    background-color:gray;
+}
+
+ul{ 
+  list-style: none;
+}
+
+li{
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+}
+
+li a{
+  color: rgb(180, 179, 179);
+}
+li a:hover{
+  color: rgb(49, 49, 49);
+}
+
+ul.contentList{
+  list-style: circle;
+  padding-left: 15px;
+}
+
+
+
+
+/* HEADING */
+
+.heading{
+    padding-top: 30px;
+    text-align: left;
+    font-size: 20px;
+    padding-left: 6px;
+}
+
+.headingBar{
+    padding-top: 30px;
+    text-align: left;
+    font-size: 20px;
+}
+
+
+.title{
+    margin-top: 10px;
+    padding-top: 20%;
+    text-align:center;
+    font-size: 20px;
+}
+
+
+.logoText{
+    width: 90%;
+    padding-left: 10%;
+}
+
+
+.logo{
+    font-family: 'Poppins', sans-serif;
+    color: #A89BFF;
+    font-weight: 600;
+    padding-left: 5%;
+    letter-spacing: 5px;
+    font-size: 50px;
+        
+}
+
+
+.text{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 10px;
+    color: black;
+}
+
+
+.info{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 10px;
+}
+
+
+/* .slogan{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    padding-top: 30px;
+    padding-left: 5%;
+    letter-spacing: 10px;
+    font-size: 15px;
+} */
+
+.Phrase{
+  font-size: 15px;
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+#benefits{
+  padding-top: 50px;
+}
+
+
+
+.logoPic{
+    padding-top: 20px;
+    padding-left: 20%;
+    opacity: 0.1;
+    position: fixed;
+    z-index: -1;
+}
+
+
+
+.customerAppHeader{
+    display: none;
+    z-index: 0.1;
+    
+}
+
+
+.fade-in {
+    animation: fadeIn ease 5s;
+    -webkit-animation: fadeIn ease 5s;
+    -moz-animation: fadeIn ease 5s;
+    -o-animation: fadeIn ease 5s;
+    -ms-animation: fadeIn ease 5s;
+    }
+    @keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+    }
+    
+    @-moz-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+    }
+    
+    @-webkit-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+    }
+    
+    @-o-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+    }
+    
+    @-ms-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+    }
+
+
+
+.backgroundPurple{
+    background-color: #e7e3ff; 
+    z-index: 1;
+    
+    }
+
+.backgroundGrey{
+    background-color: #f5f5f5; 
+    
+    }
+
+.fomButton{
+  font-family: 'Poppins', sans-serif;
+}
+
+
+.fomButton:Hover{
+ background-color: white;
+}
+
+#selectVenue, #menu, #orderSummary{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+
+.customerText{
+    font-size: 15px;
+    
+
+}
+
+.barText{
+    font-size: 15px; 
+}
+
+#barFOMButton{
+  font-family: 'Poppins', sans-serif;
+}
+
+.barApp{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 30px;
+    padding-bottom: 10px;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+
+.managerApp{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 30px;
+    padding-bottom: 10px;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+
+.centerCustomer {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.centerBar {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
+
+.centerManager {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
+
+
+
+/* -----SLIDESHOW------ */
+
+
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlidesCustomer {
+  display: none;
+}
+
+.mySlidesBar {
+    display: none;
+  }
+
+.mySlidesManager{
+    display: none;
+}
+
+/* Next & previous buttons */
+.prevCustomer, .nextCustomer, .prevBar, .nextBar, .prevManager, .nextManager {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: #A79BFF;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.nextCustomer, .nextBar, .nextManager {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prevCustomer:hover, .nextCustomer:hover, .prevBar:hover, .nextBar:hover, .prevManager:hover, .nextManager:hover {
+  background-color: #3B3B3B;
+  color: white;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dotCustomer, .dotBar, .dotManager {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dotCustomer:hover, .dotBar:hover, .dotManager:hover {
+  background-color: #A79BFF;
+}
+
+/* ----------------------------- */
+
+
+/* --------------PAGE SETUP ------------- */
+
+.pageContainer{
+  width: 900px;
+  margin: 20px 20px;
+  margin-top: 5%;
+  padding-bottom: 10%;
+}
+
+.content{
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 20px;
+}
+
+.textContainer{
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+}
+
+.contentContainer{
+  padding-right: 5px;
+  padding-left: 5px;
+  padding-top: 0;
+  padding-bottom: 0;
+
+}
+
+
+.contactContainer{
+  margin-top: 25%;
+  margin-bottom:auto;
+}
+
+
+.CustomerTsCs{
+ width: 250px;
+ height: 800px;
+ margin-top: 50px;
+ display: block;
+ margin-left: auto;
+ margin-right: auto;
+}
+
+.legalitiesTitle{
+  padding-top: 30px;
+  text-align: center;
+}
+
+
+/* -------------------------------------- */
+
+/* -----------ABOUT US PAGE -------- */
+
+.claire, .tim, .jenny{
+    margin-top: 50px;
+    border-radius: 50%;
+    width: 150px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.bioText{
+    font-size: 13px;
+    text-align: center;
+}
+
+.name{
+  margin-top: 45px;
+  margin-bottom: 0px;
+  text-align: center;
+}
+
+.jobTitle{
+  margin-bottom: 0px;
+  text-align: center;
+}
+
+.degree{
+  font-size: 10px;
+  text-align: center;
+}
+
+
+
+p{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+}
+
+
+
+/* ------------------------------ */
+
+.contactText{
+  font-size: 20px;
+  text-align: center;
+}
+
+.formTitle{
+    text-align: center;
+    font-size: 20px;
+}
+
+
+.form{
+    z-index: 20;
+    text-align: center;
+    width: max;
+}
+
+.formButton{
+    margin-top: 20px;
+    
+}
+
+.formButton:hover{
+    background-color: rgb(167,155,255,0.5);
+}
+
+
+
+
+#emailInput, #firstNameInput, #secondNameInput{
+    font-family: 'Poppins', sans-serif;
+}
+
+
+.bottom{
+    margin-top: 30%;
+}
+
+
+
+.footer{
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #737373;
+  color: white;
+
+}
+
+.footerContent{
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  font-size: 15;
+  padding-top: 50px;
+  padding-bottom: 20px;
+
+}
+
+.footerTitle{
+  font-size: 20px;
+}
+
+
+
+/* -----BAR APP PAGE------ */
+
+.barPageContent{
+  padding-top: 5%;
+  font-size: 20px;
+}
+
+.appPageTextLeft{
+  padding-left: 100px;
+  padding-top: 250px;
+  font-size: 15px;
+}
+
+
+.appPageTextRight{
+  padding-top: 30%;
+  padding-left: 100px;
+  padding-right: 100px;
+  font-size: 15px;
+
+}
+
+/* -----Benefits PAGE------ */
+
+.Icons{
+width: 50px;
+padding-top: 10px;
+}
+
+#iconContainer{
+  width: 500px;
+  margin: auto;
+  padding-bottom: 20px;
+}
+
+
+
+/* Larger than mobile */
+@media (min-width: 400px) {
+
+    .formTitle{
+        text-align: center;
+        font-size: 25px;
+    }
+
+    .customerText{
+      font-size: 15px;
+      text-align: left;
+
+    }
+  
+    .barText{
+      font-size: 15px;
+      padding-left: 0px;
+      text-align: left;
+    }
+
+  
+
+    .headingBar{
+      padding-left: 0px;
+      text-align: left;
+    }
+
+    .CustomerTsCs{
+      width: 350px;
+      height: 800px;
+      margin-top: 50px;
+      margin-left: 5%;
+      margin-right: auto;
+     }
+
+     
+     
+     .legalitiesTitle{
+       padding-top: 30px;
+       text-align: center;
+     }
+
+    
+}
+
+
+
+/* Larger than phablet */
+@media (min-width: 550px) {
+
+    .formTitle{
+        text-align: center;
+        font-size: 30px; 
+    }
+
+    .textContainer{
+      padding-left: 10%;
+      padding-right: 10%;
+      padding-top: 10%;
+      padding-bottom: 10%;
+  }
+
+  .bioText{
+    text-align: left;
+    font-size: 15px;
+  }
+
+  .name{
+    text-align: left;
+    padding-top: 20px;
+    margin-bottom: 0px;
+  }
+
+  .jobTitle{
+    text-align: left;
+    margin-bottom: 0px;
+  }
+
+  .degree{
+    text-align: left;
+    font-size: 10px;
+  }
+
+  .claire, .tim, .jenny{
+    margin-top: 50px;
+    border-radius: 50%;
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.CustomerTsCs{
+  width: 850px;
+  height: 800px;
+  margin-top: 50px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+ }
+ 
+ .legalitiesTitle{
+   padding-top: 30px;
+   text-align: center;
+ }
+
+ .headingBar{
+  padding-top: 30px;
+  text-align: left;
+  font-size: 35px;
+}
+ 
+
+
+}
+
+
+
+/* Larger than tablet */
+@media (min-width: 750px) {
+
+    
+    h1{
+        font-weight: 400;
+    }
+    
+    
+    .title{
+        padding-top: 10%;
+        text-align:center;
+        font-size: 50px;
+    }
+
+    .header{
+        padding-top: 10%;
+        font-size: 50px;
+    }
+    
+    .logo{
+        font-weight: 600;
+        padding-left: 10%;
+        letter-spacing: 5px;
+        font-size: 70px;
+    }
+    
+    .text{
+        font-weight: 400;
+        padding-top: 20%;
+        font-size: 20px;
+    }
+
+    .info{
+        font-family: 'Poppins', sans-serif;
+        font-weight: 400;
+        font-size: 15px;
+    }
+    
+    .slogan{
+        font-weight: 400;
+        padding-left: 10%;
+        letter-spacing: 25px;
+        font-size: 20px;
+    }
+
+    .Phrase{
+      font-size: 20px;
+    }
+    
+    .logoPic{
+        padding-left: 35%;
+        width: 100%;
+
+    }
+
+    .customerAppHeader{
+        z-index: 0.1;
+        width: 300px;
+        padding-top: 20%;
+        padding-bottom: 20%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .formTitle{
+        text-align: center;
+        font-size: 35px;
+    }
+
+/* Making the content headers responsive */
+
+    .heading{
+      padding-top: 30px;
+      text-align: left;
+      padding-left: 0px;
+      font-size: 35px;
+  }
+  
+    .headingBar{
+      padding-top: 30px;
+      text-align: left;
+      font-size: 35px;
+  }
+   
+  .barText{
+    font-size: 15px;
+    padding-left: 60px;
+
+  }
+
+
+    .customerText{
+      font-size: 15px;
+
+    }
+  
+  
+
+    /* padding around the home page app text in a larger screen size */
+    .contentContainer{
+      padding-right: 10%;
+      padding-top: 5%;
+      padding-bottom: 10%;
+  
+    }
+
+    .textContainer{
+      padding-left: 10%;
+      padding-right: 10%;
+      padding-top: 10%;
+      padding-bottom: 10%;
+  }
+
+  .CustomerTsCs{
+    width: 500px;
+    height: 800px;
+    margin-top: 50px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+   
+   .legalitiesTitle{
+     padding-top: 30px;
+     text-align: center;
+   }
+
+  
+
+
+  
+
+
+
+}
+
+
+
+/* Larger than desktop */
+@media (min-width: 1000px) {
+
+  .pageContainer{
+    width: 1000px;
+    margin: 0 auto;
+    margin-top: 5%;
+  }
+
+  /* NAV BAR TEXT  */
+
+  .topnav a{
+    /* media query for non burger menu */
+      font-size: 17px;
+      padding: 14px 16px;
+  }
+
+  .dropdown .dropbtn {
+    font-size: 17px;
+    font-weight: 25;
+  }
+
+    .customerAppHeader{
+        z-index: 0.1;
+        width: 300px;
+        padding-top: 20%;
+        padding-bottom: 20%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .info{
+      font-family: 'Poppins', sans-serif;
+      font-weight: 400;
+      font-size: 20px;
+  }
+
+   
+  
+
+    .textContainer{
+      padding-left: 10%;
+      padding-right: 10%;
+      padding-top: 10%;
+      padding-bottom: 10%;
+  }
+
+  .CustomerTsCs{
+    width: 675px;
+    height: 800px;
+    margin-top: 50px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+   }
+   
+   .legalitiesTitle{
+     padding-top: 30px;
+     text-align: center;
+   }
+
+   .headingBar{
+    padding-top: 30px;
+    text-align: left;
+    font-size: 35px;
+}
+
+
+.barText{
+  font-size: 15px;
+  padding-left:0px;
+
+}
+
+.customerText{
+  font-size: 15px;
+
+}
+
+}
+
+/* Larger than Desktop HD */
+@media (min-width: 1400px) {
+
+    .customerAppHeader{
+        z-index: 0.1;
+        width: 350px;
+        padding-top: 20%;
+        padding-bottom: 20%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .customerText{
+      font-size: 20px;
+    }
+  
+    .barText{
+      font-size: 20px;
+      padding-left: 60px;
+
+    }
+
+    .headingBar{
+      padding-top: 30px;
+      text-align: left;
+      font-size: 35px;
+  }
+
+
+
+    .contentContainer{
+      padding-right: 30%;
+      padding-top: 10%;
+      padding-bottom: 20%;
+  
+    }
+
+    .textContainer{
+      padding-left: 10%;
+      padding-right: 30%;
+      padding-top: 10%;
+      padding-bottom: 20%;
+  
+  }
+
+  .CustomerTsCs{
+    width: 800px;
+    height: 800px;
+    margin-top: 50px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+   }
+   
+   .legalitiesTitle{
+     padding-top: 30px;
+     text-align: center;
+   }
+
+   .pageContainer{
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top: 5%;
+  }
+
+}
+
+
+/* Larger than big desktop */
+@media (min-width: 2000px) {
+
+  .CustomerTsCs{
+    width: 800px;
+    height: 800px;
+    margin-top: 50px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+   }
+   
+   .legalitiesTitle{
+     padding-top: 30px;
+     text-align: center;
+   }
+
+
+
+
+}

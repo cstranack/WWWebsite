@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- frameworks -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha256-l85OmPOjvil/SOvVt3HnSSjzF1TUMyT9eV0c2BzEGzU=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css" integrity="sha256-2YQRJMXD7pIAPHiXr0s+vlRWA7GYJEK0ARns7k2sbHY=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <!-- fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+     
+
+    <!-- Style sheet -->
+    <title>TheWirelessWaiter - Overview</title>
+    <link rel="shortcut icon" type="image/png" href="images/favicon.png"/>
+    <link rel="stylesheet" href="/css/styles.css"/>
+    
+</head>
+<body>
+    
+    <header>
+        <div class="topnav" id="myTopnav">
+            <div class="containter">
+                <a href="index.html" class="activeLink">Overview</a>
+
+
+                <div class="dropdown">
+                    <button class="dropbtn">For Venues
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="theBenefits.html">The Benefits</a>
+                        <a href="barApp.html">Bar App</a>
+                        <a href="managerApp.html">Manager App</a>
+                    </div>
+                </div>
+
+                <a href="customers.html">For Customers</a>
+
+                <div class="dropdown">
+                    <button class="dropbtn"> Who we are
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="about.html">Meet the team</a>
+                        <a href="contactUs.html">Contact Us</a>
+                    </div>
+                </div>
+
+
+                <div class="dropdown">
+                    <button class="dropbtn btnHelp">Help
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="customerAppGuide.html">Customer App Guide</a>
+                        <a href="barAppGuide.html">Bar App Guide</a>
+                        <a href="managerAppGuide.html">Manager App Guide</a>
+                        <a href="FAQs.html">FAQ's</a>
+                    </div>
+                </div>
+
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+            </div>
+        </div>
+    </header>
+
+    <img class="logoPic" src="images/butlerLogo.svg" alt="logo">
+
+    <div class="container">
+        <div class="titleContainer">
+            <h1 class="title" > Welcome to the </h1>
+            <img class="logoText" src="images/logo.png" alt="logo">
+        </div>
+        <div class="row" id="benefits">
+            <div class="four columns"> 
+                <p class="Phrase">Better Customer Service </p>
+            </div>
+            <div class="four columns">
+                <p class="Phrase"> Improved Staff Productivity</p>
+            </div>
+            <div class="four columns">
+                <p class="Phrase"> Increased Revenue </p>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <div class="container">
+        <hr>
+        <br>
+
+        <p class="customerText">
+            Wireless Waiter is a remote ordering platform allowing customers to order and pay for food, 
+            drinks or merchandise from their smartphones. Wireless Waiter has been designed with additional 
+            functionality to help theatres as they reopen after Covid19, but the platform also works for bars, 
+            cafes, nightclubs, museums and festivals, amongst others! We are passionate about helping the arts 
+            and hospitality industries get back to full health after Covid19. 
+        </p>
+        <p class="customerText">
+            Give your customers great service at a safe distance. Wireless Waiter enables your audience 
+            or bar customers to order their food, drinks and merchandise without even having to visit a 
+            counter. Safe service with more efficient staff. There are no upfront costs for a venue to start 
+            using Wireless Waiter, so start using today and open your doors to the public with a COVID secure 
+            environment.
+        </p>
+        <p class="customerText">
+            The platform consists of three apps, please see more detail below.
+        </p>
+        <br>
+        <br>
+    </div>
+
+
+
+
+    
+    
+    <div class="backgroundPurple" data-aos="fade-up">
+    
+    <br>
+        <div class="container">
+            <div class="row">
+                <div class=" six columns">
+                                <!-- Slideshow container -->
+                    <div class="slideshow-container">
+        
+                    <!-- Full-width images with number and caption text -->
+                    <div class="mySlidesCustomer" data-aos="fade-up">
+                        <img class="customerApp centerCustomer" id="selectVenue"  src="images/SelectVenue.png" alt="CustomerApp">
+                    </div>
+        
+                    <div class="mySlidesCustomer">
+                        <img class="customerApp centerCustomer" id="selectVenue"  src="images/menu.png" alt="CustomerApp">
+                    </div>
+        
+                    <div class="mySlidesCustomer">
+                        <img class="customerApp centerCustomer" id="selectVenue"  src="images/orderSummary.png" alt="CustomerApp">
+                    </div>
+        
+                    <!-- Next and previous buttons -->
+                    <a class="prevCustomer" onclick="plusSlidesCustomer(-1)">&#10094;</a>
+                    <a class="nextCustomer" onclick="plusSlidesCustomer(1)">&#10095;</a>
+                    </div>
+                    <br>
+        
+                    <!-- The dots/circles -->
+                    <div style="text-align:center">
+                    <span class="dotCustomer" onclick="currentSlideCustomer(1)"></span>
+                    <span class="dotCustomer" onclick="currentSlideCustomer(2)"></span>
+                    <span class="dotCustomer" onclick="currentSlideCustomer(3)"></span>
+                    </div>
+        
+        
+        
+                </div>
+                <div class=" six columns">
+                    <br>
+                    <br>
+                    <h3 class="heading">Customer App</h3>
+                    
+                    <div class="contentContainer">
+                    <div class="customerText"><p> A Customer app, designed for a smart phone – 
+                        enables theatre goers to order and pay for food, drinks and merchandise 
+                        from their phones</p></div>
+                        <a href="customers.html"><button class="fomButton">Find out more</button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <br>
+    </div>
+    
+    <div class="backgroundGrey " data-aos="fade-up">
+        <br>
+        <br>
+        <div class="container">
+            <div class="row">
+                <div class=" six columns">
+                    <br>
+                    <br>
+                    <div class="contentContainer">
+                    <div class="barText">
+                        <h3 class="headingBar">Bar App</h3>
+                        <p> A Bar app, designed for a tablet – enables each bar or 
+                        outlet within a venue to view and fulfil all orders coming from the Customer app </p>
+                        <a href="barApp.html"><button class="fomButton" id="barFOMButton">Find out more</button></a>
+                    </div>
+                    </div>
+                </div>
+        
+        
+                <div class=" six columns">
+                                <!-- Slideshow container -->
+                    <div class="slideshow-container" data-aos="fade-up">
+                    <!-- Full-width images with number and caption text -->
+                    <div class="mySlidesBar">
+                        <img class="barApp centerBar" id="selectVenue"  src="images/DashboardAll.png" alt="barApp">
+                    </div>
+        
+                    <div class="mySlidesBar">
+                        <img class="barApp centerBar" id="menu" src="images/DashboardInFocus.png" alt="barApp">
+                    </div>
+        
+                    <div class="mySlidesBar">
+                        <img class="barApp centerBar" id="orderSummary"  src="images/HistoricOrders.png" alt="barApp">
+                    </div>
+        
+                    <!-- Next and previous buttons -->
+                    <a class="prevBar" onclick="plusSlidesBar(-1)">&#10094;</a>
+                    <a class="nextBar" onclick="plusSlidesBar(1)">&#10095;</a>
+                    </div>
+                    <br>
+        
+                    <!-- The dots/circles -->
+                    <div style="text-align:center">
+                    <span class="dotBar" onclick="currentSlideBar(1)"></span>
+                    <span class="dotBar" onclick="currentSlideBar(2)"></span>
+                    <span class="dotBar" onclick="currentSlideBar(3)"></span>
+                    </div>
+        
+        
+                </div>
+            </div>
+        </div>
+        <br>
+    </div>
+
+    
+    <div class="backgroundPurple" data-aos="fade-up">
+        <div class = "container">
+            <div class="row">
+                <div class=" six columns">
+                                <!-- Slideshow container -->
+                    <div class="slideshow-container" data-aos="fade-up">
+        
+                    <!-- Full-width images with number and caption text -->
+                    <div class="mySlidesManager">
+                        <img class="managerApp centerManager" id="selectVenue"  src="images/managerDashboard.png" alt="managerApp">
+                    </div>
+        
+                    <div class="mySlidesManager">
+                        <img class="managerApp centerManager" id="menu" src="images/managerMenu.png" alt="managerApp">
+                    </div>
+        
+                    <div class="mySlidesManager">
+                        <img class="managerApp centerManager" id="orderSummary"  src="images/orders.png" alt="managerApp">
+                    </div>
+        
+                    <!-- Next and previous buttons -->
+                    <a class="prevManager" onclick="plusSlidesManager(-1)">&#10094;</a>
+                    <a class="nextManager" onclick="plusSlidesManager(1)">&#10095;</a>
+                    </div>
+                    <br>
+        
+                    <!-- The dots/circles -->
+                    <div style="text-align:center">
+                    <span class="dotManager" onclick="currentSlideManager(1)"></span>
+                    <span class="dotManager" onclick="currentSlideManager(2)"></span>
+                    <span class="dotManager" onclick="currentSlideManager(3)"></span>
+                    </div>
+        
+        
+        
+                </div>
+                <div class=" six columns">
+                    <br>
+                    <br>
+                    <h3 class="heading">Manager App</h3>
+                    
+                    <div class="contentContainer">
+                    <div class="customerText"><p> A Management console – an internet portal providing management and 
+                        customer information and allowing a venue to actively manage their bars, staff and menus </p></div>
+                        <a href="managerApp.html"><button class="fomButton">Find out more</button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+    </div>
+    
+    
+    
+    <div class="container">
+    
+        <br> 
+        <br>
+        <br>
+    
+        <hr>
+    
+        <br>
+        <br>
+
+    
+        <p class="contactText">Send us an email at:</p>
+        <h4 class="formTitle">hello@thewirelesswaiter.com</h4>
+    
+        <br> 
+        <br>
+    
+    </div>
+    <div class="footer" data-aos="fade-up">
+        <div class="row footerContent">
+            <div class="four columns">
+                <h3 class="footerTitle">TheWirelessWaiter</h3>
+            </div>
+            <div class="four columns">
+                <h3 class="footerTitle">© 2021 Wireless Waiter Limited</h3>
+                <h3 class="footerTitle">All Rights Reserved</h3>
+                <h3 class="footerTitle">Registered in England Company No.13054366</h3>
+            </div>
+            <div class="four columns">
+                <h4 class="footerTitle">Legalities</h4>
+                <ul>
+                    <li><a href="privacyPolicy.html">Privacy Policy</a></li>
+                    <li><a href="venueTs&Cs.html">Venue T's & C's</a></li>
+                    <li><a href="customerTs&Cs.html">Customer T's & C's</a></li>
+                </ul>
+            </div>
+        </div>
+    
+    </div>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script src="/js/script.js"></script>
+</body>
+</html>
