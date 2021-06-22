@@ -417,6 +417,10 @@ ul.contentList{
     width: 100%;
 }
 
+.theatreImage{
+  width: 200px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
 
 
 
@@ -673,6 +677,11 @@ p{
   font-size: 20px;
 }
 
+.footerText{
+  font-size: 15px;
+  color: rgb(180, 179, 179);
+}
+
 
 
 /* -----BAR APP PAGE------ */
@@ -711,6 +720,162 @@ padding-top: 10px;
 }
 
 
+/* ---- timeline ----- */
+
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+.boxes {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+
+.timeline ul {
+  padding: 50px 0;
+}
+
+.timeline ul li {
+  list-style-type: none;
+  position: relative;
+  width: 6px;
+  margin: 0 auto;
+  padding-top: 50px;
+  background: #fff;
+}
+
+.timeline ul li::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: inherit;
+}
+
+.timeline ul li div {
+  position: relative;
+  bottom: 0;
+  width: 400px;
+  padding: 15px;
+  background: #e7e3ff;
+}
+
+.timeline ul li div::before {
+  content: '';
+  position: absolute;
+  bottom: 7px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+}
+
+.timeline ul li:nth-child(odd) div {
+  left: 45px;
+}
+
+.timeline ul li:nth-child(odd) div::before {
+  left: -15px;
+  border-width: 8px 16px 8px 0;
+  border-color: transparent #e7e3ff transparent transparent;
+}
+
+.timeline ul li:nth-child(even) div {
+  left: -439px;
+}
+
+.timeline ul li:nth-child(even) div::before {
+  right: -15px;
+  border-width: 8px 0 8px 16px;
+  border-color: transparent transparent transparent #e7e3ff;
+}
+
+time {
+  display: block;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+
+/* EFFECTS
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.timeline ul li::after {
+  transition: background .5s ease-in-out;
+}
+
+.timeline ul li.in-view::after {
+  background: #e7e3ff;
+}
+
+.timeline ul li div {
+  visibility: hidden;
+  opacity: 0;
+  transition: all .5s ease-in-out;
+}
+
+.timeline ul li:nth-child(odd) div {
+  transform: translate3d(200px, 0, 0);
+}
+
+.timeline ul li:nth-child(even) div {
+  transform: translate3d(-200px, 0, 0);
+}
+
+.timeline ul li.in-view div {
+  transform: none;
+  visibility: visible;
+  opacity: 1;
+}
+
+
+/* GENERAL MEDIA QUERIES
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+@media screen and (max-width: 900px) {
+  .timeline ul li div {
+    width: 250px;
+  }
+  .timeline ul li:nth-child(even) div {
+    left: -289px;
+    /*250+45-6*/
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .timeline ul li {
+    margin-left: 20px;
+  }
+  .timeline ul li div {
+    width: calc(100vw - 91px);
+  }
+  .timeline ul li:nth-child(even) div {
+    left: 45px;
+  }
+  .timeline ul li:nth-child(even) div::before {
+    left: -15px;
+    border-width: 8px 16px 8px 0;
+    border-color: transparent #e7e3ff transparent transparent;
+  }
+}
+
+
+
+
+/* Other Media queries */
 
 /* Larger than mobile */
 @media (min-width: 400px) {
@@ -958,13 +1123,14 @@ padding-top: 10px;
      text-align: center;
    }
 
+  /* images */
+
+  .theatreImage{
+    margin-top: 100px;
+    width: 300px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
   
-
-
-  
-
-
-
 }
 
 
@@ -1048,6 +1214,17 @@ padding-top: 10px;
   font-size: 15px;
 
 }
+
+/* Images */
+
+.theatreImage{
+  margin-top:0px;
+  width: 100%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+
+
 
 }
 

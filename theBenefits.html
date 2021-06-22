@@ -7,6 +7,7 @@
     <!-- frameworks -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha256-l85OmPOjvil/SOvVt3HnSSjzF1TUMyT9eV0c2BzEGzU=" crossorigin="anonymous" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css" integrity="sha256-2YQRJMXD7pIAPHiXr0s+vlRWA7GYJEK0ARns7k2sbHY=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     
     <!-- fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
@@ -72,10 +73,10 @@
 
     <div class="container">
 
-        <h1> The Benefits </h1>
+        <h1 class="header"> The Benefits </h1>
 
     <br>
-
+    <br>
 
 
         <div class="row">
@@ -121,36 +122,57 @@
 
         <br>
         <br>
+        <br>
 
 
 
-
-
+        <h2> More Info . . . </h2>
 
         
-        <ul class="contentList">
-            <li class="customerText">Wireless Waiter is specifically designed with theatres in mind, so allows either a seat, 
-                table or collection service for food, drinks and merchandise. Wireless Waiter automatically 
-                routes Customers orders to the correct bar or outlet for fulfilment.</li><br>
-            <li class="customerText">Wireless Waiter is designed for ease of use, allowing venues to set-up their 
-                own bars, menus and staff to get them up and running on the platform as soon as possible.</li><br>
-            <li class="customerText">Wireless Waiter requires no upfront costs from the venue and is fully funded from a small 
+
+        <div class="boxes">
+            <h1>&darr;</h1>
+        </div>
+  
+        
+        <section class="timeline">
+          <ul>
+            <li>
+              <div class="customerText">
+                Wireless Waiter is specifically designed with theatres in mind, so allows either a seat, 
+                table or collection service for food, drinks and merchandise. Wireless Waiter automatically
+                routes Customers orders to the correct bar or outlet for fulfilment.
+              </div>
+            </li>
+            <li>
+              <div class="customerText">
+                Wireless Waiter is designed for ease of use, allowing venues to set-up their 
+                own bars, menus and staff to get them up and running on the platform as soon as possible.
+              </div>
+            </li>
+            <li>
+              <div class="customerText">
+                Wireless Waiter requires no upfront costs from the venue and is fully funded from a small 
                 commission percentage taken directly from all orders placed through the Customer App. The 
                 commission includes the fees of the integrated payment provider. There are no additional 
-                charges.</li><br>
-            <li class="customerText">Wireless Waiter provides a rich source of customer and sales data for a venue allowing them to 
-                analyse patterns and behaviours to improve their business.</li><br>
-            <li class="customerText">Wireless Waiter provides a safe way to open after Covid19, reducing crowding and unnecessary 
-                movement around a venue while increasing revenue from food, drinks and merchandise.</li>
-        </ul>
-        
-
-
-
-
+                charges.
+              </div>
+            </li>
+            <li>
+              <div class="customerText">
+                Wireless Waiter provides a rich source of customer and sales data for a venue allowing them to 
+                analyse patterns and behaviours to improve their business.
+              </div>
+            </li>
+            <li>
+              <div class="customerText">
+                Wireless Waiter provides a safe way to open after Covid19, reducing crowding and unnecessary 
+                movement around a venue while increasing revenue from food, drinks and merchandise.
+              </div>
+            </li>
+          </ul>
+        </section>
     </div>
-        
-    
     
     
     <div class="container">
@@ -172,15 +194,17 @@
         <br>
     
     </div>
-    <div class="footer">
+
+    <div class="footer" data-aos="fade-up">
         <div class="row footerContent">
             <div class="four columns">
                 <h3 class="footerTitle">TheWirelessWaiter</h3>
             </div>
             <div class="four columns">
-                <h3 class="footerTitle">© 2021 Wireless Waiter Limited</h3>
-                <h3 class="footerTitle">All Rights Reserved</h3>
-                <h3 class="footerTitle">Registered in England Company No.13054366</h3>
+                <br>
+                <h3 class="footerText">© 2021 Wireless Waiter Limited</h3>
+                <h3 class="footerText">All Rights Reserved</h3>
+                <h3 class="footerText">Registered in England Company No.13054366</h3>
             </div>
             <div class="four columns">
                 <h4 class="footerTitle">Legalities</h4>
@@ -194,6 +218,10 @@
     
     </div>
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
     <script src="/js/script.js"></script>
 </body>
 </html>
