@@ -10,6 +10,23 @@ function myFunction() {
   }
 }
 
+/* BAR APP GUIDE NAVIGATION */
+
+function secondNav() {
+  var x = document.getElementById("secNav");
+  if (x.className === "topnav secNav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav secNav";
+  }
+}
+
+/* FAQ EXPANDING QUESTIONS */
+
+function expandFAQ(e) {
+  e.target.parentElement.classList.toggle('expanded');
+  e.target.nextElementSibling.classList.toggle('expanded');
+}
 
 
 
