@@ -99,7 +99,7 @@ padding-top: 30px;
 /* Add a dark background on topnav links and the dropdown button on hover */
 .topnav a:hover, .dropdown:hover .dropbtn {
   color: white;
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 /* Add a grey background to dropdown links on hover */
@@ -148,7 +148,6 @@ padding-top: 30px;
       text-align: left;
     }
   }
-
 
 /* TEXT STYLES */
 
@@ -842,6 +841,7 @@ time {
 }
 
 
+
 /* GENERAL MEDIA QUERIES
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
@@ -1064,6 +1064,7 @@ time {
         text-align: center;
         font-size: 35px;
     }
+  
 
 /* Making the content headers responsive */
 
@@ -1317,4 +1318,51 @@ time {
 
 
 
+}
+
+/* Thomas Additions */
+
+/* BAR APP GUIDE */
+
+.secNav {
+  background: none;
+  padding: 0;
+  margin: 0;
+}
+
+.secNav a {
+  font-size: 150%;
+  padding-left: 0;
+  padding-right: 3%;
+}
+
+.secNav a:hover {
+  color: rgb(34, 34, 34);
+  text-decoration-line: none;
+}
+
+/* FAQs PAGE */
+
+.faq h4:hover {
+  color: #737373;
+  cursor: pointer;
+  text-decoration-line: none;
+}
+
+.expand {
+  transition: max-height 0.25s;
+  max-height: 0px;
+  overflow: hidden;
+}
+
+.expand.expanded {
+  max-height: 50rem;
+}
+
+.faq i {
+  transition: transform 0.25s;
+}
+
+.faq.expanded i {
+  transform: rotate(-180deg);
 }

@@ -5,22 +5,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- frameworks -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha256-l85OmPOjvil/SOvVt3HnSSjzF1TUMyT9eV0c2BzEGzU=" crossorigin="anonymous" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css" integrity="sha256-2YQRJMXD7pIAPHiXr0s+vlRWA7GYJEK0ARns7k2sbHY=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+        integrity="sha256-l85OmPOjvil/SOvVt3HnSSjzF1TUMyT9eV0c2BzEGzU=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css"
+        integrity="sha256-2YQRJMXD7pIAPHiXr0s+vlRWA7GYJEK0ARns7k2sbHY=" crossorigin="anonymous" />
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    
+
     <!-- fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-     
+
 
     <!-- Style sheet -->
     <title>TheWirelessWaiter - Bar App Guide</title>
-    <link rel="shortcut icon" type="image/png" href="images/favicon.png"/>
-    <link rel="stylesheet" href="/css/styles.css"/>
-    
+    <link rel="shortcut icon" type="image/png" href="images/favicon.jpg" />
+    <link rel="stylesheet" href="/css/styles.css" />
+
 </head>
+
 <body>
-    
+
     <header>
         <div class="topnav" id="myTopnav">
             <div class="containter">
@@ -73,37 +76,867 @@
 
     <div class="container">
 
-        <h1> Coming soon</h1>
+        <h1 class="header"> Bar App Guide</h1>
 
-
-
-
+        <br>
+        <br><br>
+        <div class="topnav secNav" id="secNav">
+            <div class="containter">
+                <a href="#setup">Categories</a>
+                <a href="#orders">Orders</a>
+                <a href="#payments">Failed Payments</a>
+                <a href="#modifications">Order Modifications</a>
+                <a href="#stock">Stock</a>
+                <a href="#settings">Settings</a>
+                <a href="javascript:void(0);" class="icon" onclick="secondNav()">&#9776;</a>
+            </div>
+        </div>
+        <br><br>
     </div>
-        
-    
-    
-    
-    <div class="container">
-    
-        <br> 
+    <div class="backgroundPurple" data-aos="fade-up">
+        <br><br>
+        <div id="setup" class="container">
+            <h2>Welcome to Wireless Waiter</h2>
+            <p class="customerText">Wireless Waiter is a remote ordering platform that allows your customers to place
+                and pay for orders at your venue using their smartphone. Wireless Waiter frees your staff from taking
+                orders
+                and payments, allowing them to do what they do best, provide great service to your customers. It’s
+                simple to use and this guide should help you get up and running.</p>
+        </div>
         <br>
         <br>
-    
+    </div>
+    <div class="" data-aos="fade-up">
+        <br><br>
+        <div class="container">
+            <h2>What tablet can I use?</h2>
+            <p class="customerText">The Wireless Waiter Bar app will run on an iPad Air 2 and above running iOS version
+                13.0 or higher and any modern Android Tablet (inc. Samsung, HTC, Motorola, LG, Sony and Google)
+                running Android version 8.0 or higher.</p>
+        </div>
+        <br><br>
+    </div>
+    <div class="backgroundPurple" data-aos="fade-up">
+        <br><br>
+        <div class="container">
+            <h2>How the platform works</h2>
+            <p class="customerText">The Wireless Waiter team will have worked with you to get your venue set up on the
+                platform. You can have any number of bars, food or merchandise outlets set up under your venue. If your
+                venue
+                is set-up for ‘Collection Service’ your customers will be presented with different areas at your
+                venue where they may be located. Depending on their location, when they place an order, it will be
+                automatically routed by the system to their closest outlet. If your venue is set-up for ‘Table Service’
+                your customers will have been asked to enter their table or seat number, prior to placing their
+                order, so you can deliver their orders directly to them, when they are ready.</p>
+        </div>
+        <div class="container">
+            <p class="customerText">The Wireless Waiter platform is comprised of:</p>
+            <ul class="contentList content">
+                <li class="customerText">Our Customer app, which the customer downloads to their smartphone, enabling
+                    them
+                    to order and pay for items directly from their phone
+                </li>
+
+                <li class="customerText">Our Bar app, which enables venues to monitor and update the status of all
+                    orders coming through to their outlets. Even though we call it the ‘Bar’ app it can be used by any
+                    outlet
+                    within your venue that sells food, drinks or merchandise to your customers.
+                </li>
+
+                <li class="customerText">Our Platform, this is the central piece of the system, allowing us to make sure
+                    all your customer’s orders come through to the right place.
+                </li>
+
+            </ul>
+        </div>
+        <div class="container">
+            <p class="customerText">You are currently using the Bar app.</p>
+        </div>
+        <br><br>
+    </div>
+
+    <div class="" data-aos="fade-up">
+        <br><br>
+        <div class="container">
+            <h2>Logging In</h2>
+            <p class="customerText"></p>
+        </div>
+        <br>
+        <div class="container">
+            <div class="eight columns" data-aos="fade-up">
+                <img class="centerBar" src="images/loginpage.jpg" alt="login page">
+            </div>
+            <div class="four columns">
+                <br>
+                <br>
+                <br>
+                <p class="customerText" data-aos="fade-left">Turn on your tablet and make sure you have downloaded the
+                    latest version of the
+                    Wireless
+                    Waiter Bar app. If it has been downloaded successfully you should see a log-in screen. Type in your
+                    Venue ID and password supplied by the Wireless Waiter team to get started.</p>
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+
+    <div class="backgroundPurple" data-aos="fade-up">
+        <br><br>
+        <div class="container">
+            <h2>Forgotten your password or Venue ID?</h2>
+            <p class="customerText">You will have been provided with a Venue ID and password by the Wireless Waiter team
+                after you signed up for Wireless Waiter and while we were setting you up on our platform. If you have
+                forgotten your Venue ID, please either contact your Wireless Waiter representative directly or email us
+                at <b> hello@thewirelesswaiter.com </b> and we will resend your ID.</p>
+            <p class="customerText">If you have forgotten your password, we will need to reset it centrally. From the
+                Customer app your customers will have the ability to reset their login or password automatically. For a
+                venue however, for added security, we will currently need to reset this centrally and resend to you.
+                Please either contact your Wireless Waiter representative directly or email us at
+                <b>hello@thewirelesswaiter.com.</b>
+            </p>
+        </div>
+        <br>
+        <br>
+    </div>
+
+    <div class="" data-aos="fade-up">
+        <br><br>
+        <div class="container">
+            <h2>Setting Up the Bar</h2>
+        </div>
+        <div class="container">
+            <div class="four columns">
+                <p class="customerText" data-aos="fade-right">On logging in you will be presented with all the bars
+                    currently set up for
+                    your venue.
+                    Select which bar you want to use this tablet for and then select the members of staff who will
+                    be working during this shift. Don’t worry about getting it wrong. You can always return to this
+                    screen by pressing the cog wheel icon in the top right of every screen. Just hit the ‘Save Bar
+                    Settings’ button to get going.
+                </p>
+            </div>
+            <div class="eight columns" data-aos="fade-up">
+                <img class="centerBar" src="images/setupbar.jpg" alt="Setup Bar">
+            </div>
+        </div>
+        <br>
+        <br>
+    </div>
+
+    <div class="backgroundPurple" data-aos="fade-up">
+        <br><br>
+        <div class="container">
+            <h2>Setting the Bar Status</h2>
+            <p class="customerText">Having saved your bar details, you will be presented with
+                the current status of the bar chosen and given the option to set the status to reflect your current
+                situation. There are three statuses available.</p>
+        </div>
+        <div class="container">
+            <div class="six columns" data-aos="fade-up">
+                <img class="centerBar" src="images/barstatus.jpg" alt="Bar Status">
+            </div>
+            <div class="six columns">
+                <p class="customerText" data-aos="fade-left">Online - this means your bar is open for business and your
+                    customers will be able to start placing orders from their phones.
+                </p>
+                <p class="customerText" data-aos="fade-left">
+                    Offline - the bar is currently not accepting orders; customers will be given a message to show you
+                    are not open for business and won’t be able to place an order.
+                </p>
+                <p class="customerText" data-aos="fade-left">Pre-Order - if your bar has been configured to allow
+                    pre-orders, you’ll also have this status made
+                    available. The pre-order status allows customers to place orders under one of the pre-order time
+                    slots set-up for later that day. Pre-orders are currently only available for later that same day. If
+                    your status is set to pre-order, it will allow customers to place orders under these time slots but
+                    not for asap orders.</p>
+            </div>
+        </div>
+        <div class="container">
+            <p class="customerText">The current status of your bar is always shown in the bottom left corner of the
+                screen, and you can tap on this at any time to change the status of your bar. When you change the bar’s
+                status you will need to press the confirm button that appears. This is to avoid the bar status being
+                changed accidentally.</p>
+                <br>
+        <br>
         <hr>
-    
+        </div>
+    </div>
+    <div class="" data-aos="fade-up">
+        <br><br>
+        <div id="orders" class="container">
+            <h1>Orders</h1>
+        </div>
+        <br><br>
+    </div>
+    <div class="backgroundPurple" data-aos="fade-up">
+        <br><br>
+        <div class="container">
+            <h2>All Orders, Filtering Orders</h2>
+        </div>
+        <div class="container">
+            <div class="four columns">
+                <p class="customerText" data-aos="fade-right">After you’ve logged in and set the bar you will be taken
+                    to the main Orders screen. Initially you will be shown ‘All’ orders customers have currently placed
+                    for the bar. Orders are listed in time order with the ones placed earliest listed first.
+                </p>
+                <p class="customerText" data-aos="fade-right">Across the top of the screen are the different order
+                    statuses and if you click on one you will see all the orders that have that status.
+                </p>
+            </div>
+            <div class="eight columns" data-aos="fade-up">
+                <img class="centerBar" src="images/allorders.jpg" alt="All Orders">
+            </div>
+        </div>
+        <br><br>
+    </div>
+
+    <div class="" data-aos="fade-up">
+        <br><br>
+        <div class="container">
+            <h2>Order Statuses</h2>
+        </div>
+        <div class="container">
+            <ul class="contentList">
+                <li>
+                    <div class="customerText">
+                        <b>Pending</b> - a pending order is one that has been raised by a customer but no one from the
+                        bar team has picked it up yet. Customers see pending orders as ‘Placed’ on the customer app.
+                    </div>
+                </li>
+                <li>
+                    <div class="customerText">
+                        <b>Claimed</b> - once a member of the bar staff clicks on ‘Claim’ for a pending order, then the
+                        order moves to the ‘Claimed’ status. This means that the member of staff selected is in the
+                        process of fulfilling the order. Customers see claimed orders with a status of ‘Preparing’ on
+                        the customer app.
+                    </div>
+                </li>
+                <li>
+                    <div class="customerText">
+                        <b>Ready</b> - when the order is ready, either for a customer to collect, or to be brought to
+                        the customers table or seat, the member of the bar staff should click on ‘Ready’ to move the
+                        order to the ‘Ready’ status.
+                    </div>
+                </li>
+                <li>
+                    <div class="customerText">
+                        <b>Received</b> - once the customer has received their order, the bar staff should click on
+                        ‘Receive’ to move the order to ‘Received’ status. Orders will stay showing under the ‘Received’
+                        filter from the order screen for 24 hours from the time that the order was first placed by the
+                        customer. After those 24 hours the order will move to the ‘Historic All Orders’ section.
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <br><br>
+    </div>
+
+    <div class="backgroundPurple" data-aos="fade-up">
+        <br><br>
+        <div class="container">
+            <h2>Setting your Staff ID</h2>
+        </div>
+        <div class="container">
+            <p class="customerText" data-aos="fade-right">Before you click on any order or try to change its status you
+                need to set your staff ID in the bottom right-hand corner of the screen. All actions undertaken through
+                the app are recorded against the staff ID so there’s a full activity history of who’s done what on the
+                app. Before you perform any action make sure your staff ID is highlighted in the bottom right-hand
+                corner.
+            </p>
+            <p class="customerText" data-aos="fade-right">If you can’t see your staff ID in the list then click on the
+                cog icon in the top right-hand corner, this will take you to the ‘Set Bar’ screen and allow you to add
+                additional staff to the service. Choose your staff ID and then click ‘Save Bar Settings’. When you go
+                back to the order screen you should then be able to see your staff ID in the bottom right-hand corner.
+            </p>
+            <p class="customerText" data-aos="fade-right">If no member of staff is selected the app will prompt you to
+                select one before you can complete an action on the app.
+            </p>
+        </div>
+        <br><br>
+    </div>
+
+    <div class="" data-aos="fade-up">
+        <br><br>
+        <div class="container">
+            <h2>Order Details</h2>
+        </div>
+        <div class="container">
+            <div class="eight columns" data-aos="fade-up">
+                <img class="centerBar" src="images/orderdetails.jpg" alt="Order Details">
+            </div>
+            <div class="four columns">
+                <p class="customerText">If you click on any order from the order screen, you are taken into the full
+                    detail
+                    view for that order. The following information is shown for each order:
+                </p>
+            </div>
+        </div>
+        <section class="timeline container">
+            <ul>
+                <li>
+                    <div class="customerText">
+                        <b>Order Number</b> - the unique reference number for each order, this is displayed in the top
+                        left-hand corner of the order detail box.
+                    </div>
+                </li>
+                <li>
+                    <div class="customerText">
+                        <b>Order Type</b> - whether the order is for ‘ASAP’ (as soon as possible) or ‘Pre-order’ is
+                        shown
+                        next to the order number.
+                    </div>
+                </li>
+                <li>
+                    <div class="customerText">
+                        <b>Current Order Status</b> - the next field across the top of the order detail box shows the
+                        current status for the order (‘Ready’ in the example shown), next to the order status is a
+                        circle
+                        containing the initials of the member of bar status (‘AL’ in the example shown) who moved the
+                        order
+                        to its current status.
+                    </div>
+                </li>
+                <li>
+                    <div class="customerText">
+                        <b>Set Next Order Status</b> - next to the current order status is a coloured button that shows
+                        the
+                        next status that will be set on clicking the button. In the example shown there is a green
+                        ‘Received’ button that will move the current order from ‘Ready’ to ‘Received’ once clicked.
+                    </div>
+                </li>
+                <li>
+                    <div class="customerText">
+                        <b>Order Items</b> - the main body of the order detail box shows the list of menu items ordered
+                        by
+                        the customer. These show the name of the menu item, the number of each item ordered, and any
+                        modifier information for the menu item. The main body is a scrollable list so you can scroll
+                        down to
+                        see all menu items ordered by the customer.
+                    </div>
+                </li>
+                <li>
+                    <div class="customerText">
+                        <b>Order date/time</b> - along the bottom bar of the order detail box, the first item is the
+                        order date/time. This will show the date and time that the order was placed by the customer for
+                        ASAP orders, or the pre-order timeslot chosen by the customer for Pre-orders.
+                    </div>
+                </li>
+                <li>
+                    <div class="customerText">
+                        <b>Countdown Timer</b> - next to the order date/time is the countdown timer. This is coloured
+                        red for an asap order or for a pre-order past it’s timeslot. The number next to the countdown
+                        arcontainer will show either the hrs/minutes since the order was placed (for asap orders) or the
+                        hrs/minutes past the pre-order timeslot. For pre-order time slots that haven’t been reached yet,
+                        there will be a green arcontainer with the number of hrs/minutes until the pre-order time
+                        chosen.
+                    </div>
+                </li>
+                <li>
+                    <div class="customerText">
+                        <b>Item Count</b> - next to the countdown timer is a total of the number of menu items selected
+                        by the customer.
+                    </div>
+                </li>
+                <li>
+                    <div class="customerText">
+                        <b>Order Total</b> - in the bottom right-hand corner of the order detail box is the total cost
+                        of the order placed.
+                    </div>
+                </li>
+                <li>
+                    <div class="customerText">
+                        <b>Notification Bell</b> - for venues offering a collection service, once orders have reached
+                        ‘Ready’ status a red notification bell will also appear in the bottom bar of the order detail
+                        box. Clicking on this will allow the bar staff to send a notification reminder to the customer,
+                        letting them know their order is still waiting to be collected.
+                    </div>
+                </li>
+                <li>
+                    <div class="customerText">
+                        <b>Customer Name</b> - for orders that have reached ‘Ready’ status, the detail screen will also
+                        show the name of the customer who placed the order.
+                    </div>
+                </li>
+                <li>
+                    <div class="customerText">
+                        <b>Collection Code / Table/Seat Number</b> - for orders that have reached ‘Ready’ status, the
+                        detail screen will also show either the collection code for the customer, if a collection
+                        service order, or the table or seat number of the customer, for a table service order.
+                    </div>
+                </li>
+                <li>
+                    <div class="customerText">
+                        <b>Payment Status</b> - for orders that have reached ‘Ready’ status the order detail screen will
+                        also show the status of the payment. If the payment has been successfully processed through the
+                        customer app, the field will say ‘Payment Successful’. If there was a problem processing the
+                        payment through the customer app, the ‘Ready’ status will be updated to a red ‘Payment Failed’
+                        status and the order detail screen will add a button to enable a manual payment to be taken.
+                    </div>
+                </li>
+            </ul>
+        </section>
+        <br><br>
+    </div>
+    <div class="backgroundPurple" data-aos="fade-up">
+        <br><br>
+        <div class="container">
+            <h2>Claiming an Order</h2>
+        </div>
+        <div class="container">
+            <div class="eight columns" data-aos="fade-up">
+                <img class="centerBar" src="images/claimingorder.jpg" alt="Claiming Order">
+            </div>
+            <div class="four columns">
+                <p class="customerText" data-aos="fade-left">When a customer places an order it will appear on the
+                    pending orders screen. You can tap any order to bring it into focus and see more details. If you're
+                    ready to work on your next order, make sure your initials are selected at the bottom right of the
+                    screen and then just press the purple ‘Claim’ button on the next order. The customer will receive a
+                    notification that their order is being prepared. The order that has been waiting the longest will
+                    always be the top left order so best to select this one first.
+                </p>
+            </div>
+        </div>
+        <br><br>
+    </div>
+    <div class="" data-aos="fade-up">
+        <br><br>
+        <div class="container">
+            <h2>Preparing an Order</h2>
+        </div>
+        <div class="container">
+            <div class="four columns">
+                <p class="customerText" data-aos="fade-right">All the orders that are currently being worked on will
+                    show on the claimed order screen. You’ll see a purple box at the bottom right of the order if there
+                    are more items than can be shown on the screen. You can tap on any order to bring up full details of
+                    that order. Once the order has been prepared check your initials are highlighted at the bottom right
+                    of the screen and then press the ‘Ready’ button. This will collect the payment from the customer's
+                    card and send them a notification to say their order is ready.
+                </p>
+            </div>
+            <div class="eight columns" data-aos="fade-up">
+                <img class="centerBar" src="images/preparingorders.jpg" alt="Preparing Orders">
+            </div>
+        </div>
+        <br><br>
+    </div>
+    <div class="backgroundPurple" data-aos="fade-up">
+        <br><br>
+        <div class="container">
+            <h2>Serving an Order</h2>
+        </div>
+        <div class="container">
+            <p class="customerText">
+                Before serving the order to the customer check the Ready screen to confirm that payment has been
+                collected. You can click on each order to bring it into focus and see further details. Once the order
+                has been served to the customer check that your initials are showing in the bottom right of the screen
+                and then press the green ‘Received’ button to complete the order. The customer will receive a
+                notification, ‘Enjoy your order!’.
+            </p>
+        </div>
+        <br><br>
+    </div>
+    <div class="" data-aos="fade-up">
+        <br><br>
+        <div class="container">
+            <h2>Received Orders</h2>
+        </div>
+        <div class="container">
+            <p class="customerText">
+                If you want to review orders that have recently been received by customers, then select the ‘Received’
+                filter and you can tap each order to bring it into focus for more detail. Orders are held under the
+                ‘Received’ filter for 24 hours after the order was placed. If you want to see older orders press the
+                Historic All Orders button on this screen to see a list of older orders.
+            </p>
+        </div>
+        <br><br>
+    </div>
+    <div class="backgroundPurple" data-aos="fade-up">
+        <br><br>
+        <div class="container">
+            <h2>Searching for Orders</h2>
+        </div>
+        <div class="container">
+            <p class="customerText">
+                If you need to find a particular order you can type in the order number into the search bar at the top
+                of the screen to bring up details for the order in question.
+            </p>
+        </div>
+        <br><br>
+    </div>
+    <div class="" data-aos="fade-up">
+        <br><br>
+        <div class="container">
+            <h2>Historic All orders</h2>
+        </div>
+        <div class="container">
+            <div class="eight columns" data-aos="fade-up">
+                <img class="centerBar" src="images/historicorders.jpg" alt="Historic Orders">
+            </div>
+            <div class="four columns">
+                <p class="customerText" data-aos="fade-left">Historic All Orders can be accessed from the ‘Received’
+                    status filter on the Orders screen. Clicking into Historic All Orders gives you a list of all orders
+                    placed at the Bar you are in that have either reached ‘Received’ status, or that have been fully
+                    refunded. You can click into the detail of an order for more information. Orders can be filtered by
+                    ‘Received’, ‘Part Refunded’ or ‘Refunded’, or you can search for a particular order number using the
+                    search bar at the top of the screen.
+                </p>
+            </div>
+        </div>
+        <div class="container"><br><br><hr></div>
+        
+    </div>
+
+    <div class="backgroundPurple" data-aos="fade-up">
+        <br><br>
+        <div id="payments" class="container">
+            <h1>Failed Payments</h1>
+        </div>
+        <br><br>
+    </div>
+    <div class="" data-aos="fade-up">
+        <br><br>
+        <div class="container">
+            <h2>Check the Ready Screen</h2>
+        </div>
+        <div class="container">
+            <div class="four columns">
+                <p class="customerText" data-aos="fade-right">Payment is taken at the point that the customer’s order
+                    moves to the ‘Ready’ status. All customer card details are pre-validated before they place an order,
+                    so in most cases payment will be collected successfully. If a card payment does fail, then this will
+                    be highlighted with a red notification in the top right corner of the order. You will not be able to
+                    mark this order as received until payment is made.
+                </p>
+            </div>
+            <div class="eight columns" data-aos="fade-up">
+                <img class="centerBar" src="images/preparingorders.jpg" alt="Check Ready Screen">
+            </div>
+        </div>
+        <br><br>
+    </div>
+
+    <div class="backgroundPurple" data-aos="fade-up">
+        <br><br>
+        <div class="container">
+            <h2>Ask the Customer to Retry their Payment</h2>
+        </div>
+        <div class="container">
+            <div class="eight columns" data-aos="fade-up">
+                <img class="centerBar" src="images/retrypayment.jpg" alt="Retry Payment">
+            </div>
+            <div class="four columns">
+                <p class="customerText" data-aos="fade-left">If a customer’s payment has failed, they will
+                    automatically receive a notification telling them that their order is Ready but their payment has
+                    failed. They will then be asked to retry their payment. They will have the option to retry with
+                    their original payment method or add a new payment method. They can retry as many times as they
+                    would like.
+                </p>
+            </div>
+        </div>
+        <br><br>
+    </div>
+
+    <div class="" data-aos="fade-up">
+        <br><br>
+        <div class="container">
+            <h2>Taking Manual Payment</h2>
+        </div>
+        <div class="container">
+            <p class="customerText" data-aos="fade-right">If their order is still showing as ‘Payment Failed’,
+                firstly check that the customer has retried their payment through the Customer app. You can refresh
+                the order screen to check whether the payment has then succeeded. As a final resort, there is the
+                option to take manual payment. You will need to ask the customer for an alternative payment either
+                using cash or your venue’s other alternative payment methods. Once payment has been collected from
+                the customer you can press the Manual Payment button. This will then ask you to confirm that payment
+                has been collected manually. You will then get a confirmation message that the system has recorded
+                the order as being manually paid and you can serve the customer with their order.
+            </p>
+            <br><br>
+
+        <hr>
+        </div>
+    </div>
+
+    <div class="backgroundPurple" data-aos="fade-up">
+        <br><br>
+        <div id="modifications" class="container">
+            <h1>Order Modifications</h1>
+        </div>
+        <br><br>
+    </div>
+
+    <div class="" data-aos="fade-up">
+        <br><br>
+        <div class="container">
+            <h2>Amending an Order</h2>
+        </div>
+        <div class="container">
+            <div class="six columns" data-aos="fade-up">
+                <img class="centerBar" src="images/amendorder.jpg" alt="Amend Order">
+            </div>
+            <div class="six columns">
+                <p class="customerText" data-aos="fade-left">Bar staff have the ability to amend an order from the
+                    in-focus view for that order. While the order is in the Pending or Claimed state Bar staff can
+                    remove individual items or remove all items and hence cancel the order for a customer. The customer
+                    will receive a notification letting them know that their order has been modified and highlighting
+                    the changes. In either of these statuses, it is before any payment has been taken from the customer.
+                    The order total will be updated and on reaching the ‘Ready’ status, the revised amount will be
+                    charged to the customer.
+                </p>
+            </div>
+        </div>
+        <div class="container">
+            <p class="customerText" data-aos="fade-left">It is useful to know that because no payment has been taken
+                from the customer at this point, no charge will be incurred from our third-party payment provider if
+                amending or cancelling orders prior to the ‘Ready’ status.
+            </p>
+        </div>
+        <br><br>
+    </div>
+
+    <div class="backgroundPurple" data-aos="fade-up">
+        <br><br>
+        <div class="container">
+            <h2>Refunding Items for an Order</h2>
+        </div>
+        <div class="container">
+            <div class="four columns">
+                <p class="customerText" data-aos="fade-right">Once the order has reached the ‘Ready’ status, payment
+                    will have been taken from the Customer. Amendments made to an order after this point are therefore
+                    refunds to the customer and will incur charges from our third-party payment provider.
+                </p>
+                <p class="customerText" data-aos="fade-right">Individual items can be refunded, or the entire order can
+                    be refunded. The customer will receive a notification letting them know that their order has been
+                    modified and highlighting the changes to them.
+                </p>
+            </div>
+            <div class="eight columns" data-aos="fade-up">
+                <img class="centerBar" src="images/refundingitems.jpg" alt="Refunding Items">
+            </div>
+        </div>
+        <br><br>
+    </div>
+
+    <div class="" data-aos="fade-up">
+        <br><br>
+        <div class="container">
+            <h2>Customer Modifications</h2>
+        </div>
+        <div class="container">
+            <p class="customerText">
+                Customers have the ability to amend their own orders up to the point the order has been ‘Claimed’ by the
+                Bar. On Claiming an order it’s worth refreshing the Order screen, pulling the screen down will refresh,
+                or, if in the detail view for an order, you can click on ‘Refresh’ to ensure you are looking at the most
+                up-to-date version of the order, including any last-minute updates from the customer.
+            </p>
+            <br><br>
+        <hr>
+        </div>
+    </div>
+
+    <div class="backgroundPurple" data-aos="fade-up">
+        <br><br>
+        <div id="stock" class="container">
+            <h1>Stock</h1>
+        </div>
+        <br><br>
+    </div>
+
+    <div class="" data-aos="fade-up">
+        <br><br>
+        <div class="container">
+            <h2>Viewing Stock Items</h2>
+        </div>
+        <div class="container">
+            <div class="eight columns" data-aos="fade-up">
+                <img class="centerBar" src="images/viewstock.jpg" alt="View Stock">
+            </div>
+            <div class="four columns">
+                <br><br><br>
+                <p class="customerText" data-aos="fade-left">The Stock screen will take you to view all the menu items
+                    you have available through your Bar. Initially set on ‘All’, you have the ability to filter by the
+                    menu categories that have been set up for your venue and are visible to the Customer.
+                </p>
+            </div>
+        </div>
+        <br>
+        <div class="container">
+            <p class="customerText">
+                For each menu item shown in the top-level list you can see:
+            </p>
+            <ul class="contentList">
+                <li class="customerText" data-aos="fade-left">
+                    Menu Item name [Heineken]
+                </li>
+                <li class="customerText" data-aos="fade-left">
+                    Number of items currently ordered across all open customer orders [ (6) ]
+                </li>
+                <li class="customerText" data-aos="fade-left">
+                    List of modifier items for the menu item shown [ Pint | Half Pint ]
+                </li>
+                <li class="customerText" data-aos="fade-left">
+                    Price of the first modifier item [ £5.20 ]
+                </li>
+                <li class="customerText" data-aos="fade-left">
+                    Menu item status [Available]
+                </li>
+            </ul>
+            <br>
+            <p class="customerText">
+                There are three menu item states:
+            </p>
+            <ul class="contentList">
+                <li class="customerText" data-aos="fade-left">
+                    <b>Available</b> - there is availability of the menu item and all underlying modifiers for that item
+                </li>
+                <li class="customerText" data-aos="fade-left">
+                    <b>Limited</b> - one or more of the underlying modifiers for the menu item are showing as out of
+                    stock
+                </li>
+                <li class="customerText" data-aos="fade-left">
+                    <b>No Stock</b> - the menu item and all its underlying modifiers are showing as out of stock
+                </li>
+            </ul>
+        </div>
+        <br><br>
+    </div>
+
+    <div class="backgroundPurple" data-aos="fade-up">
+        <br><br>
+        <div class="container">
+            <h2>Setting Stock Items to Unavailable</h2>
+        </div>
+        <div class="container">
+            <div class="four columns">
+                <p class="customerText" data-aos="fade-right">Clicking on a menu item from the main Stock screen takes
+                    you into a more detailed view of that menu item. All modifier items for that menu item will be
+                    displayed along with the number of orders currently placed for that modifier, the price, and the
+                    current availability setting.
+                </p>
+                <p class="customerText" data-aos="fade-right">You can switch a modifier from available to unavailable by
+                    clicking on the toggle to the right of the item. If there are no currently placed orders for that
+                    item (0) the modifier will be set to unavailable and the modifier will no longer be visible through
+                    the customer app, so no further orders can be placed including that modifier item.
+                </p>
+            </div>
+            <div class="eight columns" data-aos="fade-up">
+                <img class="centerBar" src="images/stocktounavailable.jpg" alt="Stock Items to Unavailable">
+            </div>
+        </div>
+        <br>
+        <div class="container">
+            <p class="customerText">
+                If there are currently placed orders for that modifier item (5) then on switching the item to
+                unavailable, you will be presented with the following message ‘There are pending orders with this item
+                on. Do you want to remove for them as well?’, you will be given three options:
+            </p>
+            <ul class="contentList">
+                <li class="customerText" data-aos="fade-left">
+                    <b>Remove</b> - this will remove this modifier item from all open customer orders currently placed.
+                    The customer will receive a notification telling them that their order has been modified and
+                    highlighting the item that has been removed. The modifier item will then be set to ‘unavailable’ and
+                    will no longer show through the customer app to prevent any further orders being placed.
+                </li>
+                <li class="customerText" data-aos="fade-left">
+                    <b>Keep</b> - this will set the modifier item to unavailable, meaning that it will be no longer
+                    visible through the customer app. Any open orders containing this item will be left as is.
+                    Therefore, you should choose ‘keep’ if you have a limited number of the item left, but enough to
+                    fulfil currently placed orders.
+                </li>
+                <li class="customerText" data-aos="fade-left">
+                    <b>Cancel</b> - this will cancel the action and return you to the detailed view for that menu item
+                    with the modifier still set to ‘available’.
+                </li>
+            </ul>
+            <br><br>
+
+        <hr>
+        </div>
+        
+    </div>
+
+    <div class="" data-aos="fade-up">
+        <br><br>
+        <div id="settings" class="container">
+            <h1>Settings</h1>
+        </div>
+        <br><br>
+    </div>
+
+    <div class="backgroundPurple" data-aos="fade-up">
+        <br><br>
+        <div class="container">
+            <h2>Help & Guides</h2>
+        </div>
+        <div class="container">
+            <p class="customerText">
+                These help screens are available both from the login screen and from Settings under ‘Help & guides’.
+            </p>
+        </div>
+        <br><br>
+    </div>
+
+    <div class="" data-aos="fade-up">
+        <br><br>
+        <div class="container">
+            <h2>Activity History</h2>
+        </div>
+        <div class="container">
+            <div class="eight columns" data-aos="fade-up">
+                <img class="centerBar" src="images/activityhistory.jpg" alt="Activity History">
+            </div>
+            <div class="four columns">
+                <p class="customerText" data-aos="fade-left">Activity History provides a full running list of all
+                    activity undertaken through the app for the currently chosen Bar.
+                </p>
+                <p class="customerText" data-aos="fade-left">The listings for each activity show: the order number; the
+                    member of staff who undertook the action; details of the action; the date/time stamp when the action
+                    was undertaken.
+                </p>
+                <p class="customerText" data-aos="fade-left">You can search in the search bar at the top for an order
+                    number to see all actions that took place on a particular order.
+                </p>
+            </div>
+        </div>
+        <br><br>
+    </div>
+
+    <div class="backgroundPurple" data-aos="fade-up">
+        <br><br>
+        <div class="container">
+            <h2>Log out</h2>
+        </div>
+        <div class="container">
+            <p class="customerText">
+                By default, you will be left logged in to the Bar app, even if you close and then reopen the
+                application. If you would like to log out completely, this can be done from the Settings screen using
+                the ‘Log out’ button.
+            </p>
+        </div>
+        <br><br>
+    </div>
+
+
+
+
+
+    <div class="container">
+
+        <hr>
+
         <br>
         <br>
 
-    
+
         <p class="contactText">Send us an email at:</p>
         <h4 class="formTitle">hello@thewirelesswaiter.com</h4>
-    
-        <br> 
+
         <br>
-    
+        <br>
+
     </div>
     <div class="footer" data-aos="fade-up">
-        <div class="row footerContent">
+        <div class="container footerContent">
             <div class="four columns">
                 <h3 class="footerTitle">TheWirelessWaiter</h3>
             </div>
@@ -122,13 +955,14 @@
                 </ul>
             </div>
         </div>
-    
+
     </div>
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
-      AOS.init();
+        AOS.init();
     </script>
     <script src="/js/script.js"></script>
 </body>
+
 </html>
